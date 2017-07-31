@@ -25966,12 +25966,12 @@
 						_reactRouter.Route,
 						{ path: '/' },
 						_react2.default.createElement(_reactRouter.IndexRoute, { title: 'HOME', selected: 'home', component: _Pages.MainPage }),
-						_react2.default.createElement(_reactRouter.Route, { path: './shuttle/subway', title: C.TitleWithIcon.shuttleToSubway, selected: 'shuttleToSubway', component: _Pages.MainPage }),
-						_react2.default.createElement(_reactRouter.Route, { path: './shuttle/terminal', title: C.TitleWithIcon.shuttleToTerminal, selected: 'shuttleToTerminal', component: _Pages.MainPage }),
-						_react2.default.createElement(_reactRouter.Route, { path: './subway', title: C.TitleWithIcon.subway, selected: 'subway', component: _Pages.MainPage }),
-						_react2.default.createElement(_reactRouter.Route, { path: './terminal', title: C.TitleWithIcon.terminal, selected: 'terminal', component: _Pages.MainPage }),
-						_react2.default.createElement(_reactRouter.Route, { path: './dorm', title: C.TitleWithIcon.dorm, selected: 'dorm', component: _Pages.MainPage }),
-						_react2.default.createElement(_reactRouter.Route, { path: './info', title: C.TitleWithIcon.info, selected: 'info', component: _Pages.MainPage })
+						_react2.default.createElement(_reactRouter.Route, { path: '/shuttle/subway', title: C.TitleWithIcon.shuttleToSubway, selected: 'shuttleToSubway', component: _Pages.MainPage }),
+						_react2.default.createElement(_reactRouter.Route, { path: '/shuttle/terminal', title: C.TitleWithIcon.shuttleToTerminal, selected: 'shuttleToTerminal', component: _Pages.MainPage }),
+						_react2.default.createElement(_reactRouter.Route, { path: '/subway', title: C.TitleWithIcon.subway, selected: 'subway', component: _Pages.MainPage }),
+						_react2.default.createElement(_reactRouter.Route, { path: '/terminal', title: C.TitleWithIcon.terminal, selected: 'terminal', component: _Pages.MainPage }),
+						_react2.default.createElement(_reactRouter.Route, { path: '/dorm', title: C.TitleWithIcon.dorm, selected: 'dorm', component: _Pages.MainPage }),
+						_react2.default.createElement(_reactRouter.Route, { path: '/info', title: C.TitleWithIcon.info, selected: 'info', component: _Pages.MainPage })
 					)
 				);
 			}
