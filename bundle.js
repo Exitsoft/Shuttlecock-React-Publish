@@ -25971,8 +25971,7 @@
 						_react2.default.createElement(_reactRouter.Route, { path: '/subway', title: C.TitleWithIcon.subway, selected: 'subway', component: _Pages.MainPage }),
 						_react2.default.createElement(_reactRouter.Route, { path: '/terminal', title: C.TitleWithIcon.terminal, selected: 'terminal', component: _Pages.MainPage }),
 						_react2.default.createElement(_reactRouter.Route, { path: '/dorm', title: C.TitleWithIcon.dorm, selected: 'dorm', component: _Pages.MainPage }),
-						_react2.default.createElement(_reactRouter.Route, { path: '/info', title: C.TitleWithIcon.info, selected: 'info', component: _Pages.MainPage }),
-						_react2.default.createElement(_reactRouter.Route, { path: '*', component: _Pages.NoMatchPage })
+						_react2.default.createElement(_reactRouter.Route, { path: '/info', title: C.TitleWithIcon.info, selected: 'info', component: _Pages.MainPage })
 					)
 				);
 			}
