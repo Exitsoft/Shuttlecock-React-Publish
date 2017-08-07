@@ -71925,7 +71925,8 @@
 						_react2.default.createElement(
 							'div',
 							{ className: 'timer' },
-							(h > 0 && h + '시간 ') + s
+							h > 0 && h + '시간 ',
+							s
 						),
 						_react2.default.createElement(
 							'div',
