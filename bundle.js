@@ -72099,8 +72099,7 @@
 								)
 							)
 						)
-					),
-					_react2.default.createElement(_Components.RefreshButton, null)
+					)
 				);
 			}
 		}, {
