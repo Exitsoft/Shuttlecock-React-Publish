@@ -88714,7 +88714,8 @@
 
 			_this.state = {
 				now: new _moment2.default(),
-				swipeIndex: 0
+				swipeIndex: 0,
+				second: 0
 			};
 			return _this;
 		}
@@ -88727,7 +88728,12 @@
 				var intervalId = setInterval(function () {
 					_this2.setState({
 						now: new _moment2.default(),
-						intervalId: intervalId
+						intervalId: intervalId,
+						second: _this2.state.second + 1
+					}, function () {
+						if (_this2.state.second % 7 === 0) {
+							_this2.swipe.next();
+						}
 					});
 				}, 1000);
 			}
@@ -88829,11 +88835,14 @@
 			value: function render() {
 				var _this4 = this;
 
+				var swipeItems = [_react2.default.createElement(_Components.NoticeCard, null), _react2.default.createElement(_Components.NoticeCard, null), _react2.default.createElement(_Components.NoticeCard, null)];
+
 				var swipeOptions = {
-					continuous: false,
+					continuous: true,
 					callback: function callback(ndx) {
 						_this4.setState({
-							swipeIndex: ndx
+							swipeIndex: ndx,
+							second: 0
 						});
 					}
 				};
@@ -88850,26 +88859,24 @@
 					_react2.default.createElement(
 						_reactSwipe2.default,
 						{
+							ref: function ref(e) {
+								return _this4.swipe = e;
+							},
 							className: 'swipe',
 							swipeOptions: swipeOptions
 						},
-						_react2.default.createElement(
-							'div',
-							{ className: 'swipeWrapper' },
-							_react2.default.createElement(_Components.NoticeCard, null)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 'swipeWrapper' },
-							_react2.default.createElement(_Components.NoticeCard, null)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 'swipeWrapper' },
-							_react2.default.createElement(_Components.NoticeCard, null)
-						)
+						swipeItems.map(function (item, i) {
+							return _react2.default.createElement(
+								'div',
+								{
+									key: 'swipe-items-' + i,
+									className: 'swipeWrapper'
+								},
+								item
+							);
+						})
 					),
-					_react2.default.createElement(_Components.Paginator, { count: 3, index: this.state.swipeIndex }),
+					_react2.default.createElement(_Components.Paginator, { count: swipeItems.length, index: this.state.swipeIndex }),
 					this.renderBuses()
 				);
 			}
