@@ -87933,6 +87933,8 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _reactRouter = __webpack_require__(235);
+
 	var _bind = __webpack_require__(962);
 
 	var _bind2 = _interopRequireDefault(_bind);
@@ -87950,7 +87952,8 @@
 
 	var defaultProps = {};
 	var propTypes = {
-		style: _react.PropTypes.object
+		style: _react.PropTypes.object,
+		href: _react.PropTypes.string
 	};
 
 	var Card = function (_Component) {
@@ -87968,12 +87971,20 @@
 				var _props = this.props,
 				    content = _props.content,
 				    className = _props.className,
-				    style = _props.style;
+				    style = _props.style,
+				    href = _props.href;
 
 				return _react2.default.createElement(
-					'div',
-					{ className: (0, _bind2.default)('card', className), style: style },
-					content
+					_reactRouter.Link,
+					{ to: href },
+					_react2.default.createElement(
+						'div',
+						{
+							className: (0, _bind2.default)('card', className),
+							style: style
+						},
+						content
+					)
 				);
 			}
 		}]);
@@ -88456,7 +88467,12 @@
 	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               */
 
 	var defaultProps = {};
-	var propTypes = {};
+	var propTypes = {
+		type: _react.PropTypes.string,
+		time: _react.PropTypes.object,
+		now: _react.PropTypes.object,
+		href: _react.PropTypes.string
+	};
 
 	var color = '';
 
@@ -88538,12 +88554,10 @@
 		}, {
 			key: 'render',
 			value: function render() {
-				var type = this.props.type;
-
-
 				return _react2.default.createElement(_Components.Card, {
 					className: 'simpleBusCard',
 					content: this.renderContent(),
+					href: this.props.href,
 					style: {
 						borderLeft: '3.5px solid ' + color
 					}
@@ -88702,7 +88716,11 @@
 		timetable: null,
 		pedalo: null
 	};
-	var propTypes = {};
+
+	var propTypes = {
+		timetable: _react.PropTypes.object,
+		pedalo: _react.PropTypes.object
+	};
 
 	var HomeContent = function (_Component) {
 		_inherits(HomeContent, _Component);
@@ -88788,11 +88806,13 @@
 							'\uC154\uD2C0\uCF55'
 						),
 						this.hasBus(timetable.shuttleA) ? _react2.default.createElement(_Components.SimpleBusCard, {
+							href: 'shuttle/subway',
 							type: timetable.shuttleA[0].type,
 							now: this.state.now,
 							time: (0, _moment2.default)(timetable.shuttleA[0].time, 'H:mm')
 						}) : _react2.default.createElement(_Components.NoBusCard, null),
 						this.hasBus(timetable.shuttleB) && timetable.shuttleB[0].type === 'toTerminal' && _react2.default.createElement(_Components.SimpleBusCard, {
+							href: 'shuttle/terminal',
 							type: timetable.shuttleB[0].type,
 							now: this.state.now,
 							time: (0, _moment2.default)(timetable.shuttleB[0].time, 'H:mm')
@@ -88803,6 +88823,7 @@
 							'\uD55C\uB300\uC55E\uC5ED'
 						),
 						this.hasBus(timetable.subway) ? _react2.default.createElement(_Components.SimpleBusCard, {
+							href: 'subway',
 							type: timetable.subway[0].type,
 							now: this.state.now,
 							time: (0, _moment2.default)(timetable.subway[0].time, 'H:mm')
@@ -88813,6 +88834,7 @@
 							'\uC608\uC220\uC778APT'
 						),
 						this.hasBus(timetable.terminal) ? _react2.default.createElement(_Components.SimpleBusCard, {
+							href: 'terminal',
 							type: timetable.terminal[0].type,
 							now: this.state.now,
 							time: (0, _moment2.default)(timetable.terminal[0].time, 'H:mm')
@@ -88823,6 +88845,7 @@
 							'\uAE30\uC219\uC0AC'
 						),
 						this.hasBus(timetable.dorm) ? _react2.default.createElement(_Components.SimpleBusCard, {
+							href: 'dorm',
 							type: timetable.dorm[0].type,
 							now: this.state.now,
 							time: (0, _moment2.default)(timetable.dorm[0].time, 'H:mm')
@@ -90748,8 +90771,7 @@
 						title: 'TestPage',
 						menuBtnClick: this.onSetSidebarOpen
 					}),
-					'test test test',
-					_react2.default.createElement(_Components.Paginator, null)
+					_react2.default.createElement(_Components.NoticeCard, null)
 				);
 			}
 		}]);
