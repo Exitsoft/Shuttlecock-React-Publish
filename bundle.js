@@ -89045,15 +89045,13 @@
 							href: 'shuttle/subway',
 							type: timetable.shuttleA[0].type,
 							now: this.state.now,
-							time: (0, _moment2.default)(timetable.shuttleA[0].time, 'H:mm'),
-							ripple: true
+							time: (0, _moment2.default)(timetable.shuttleA[0].time, 'H:mm')
 						}) : _react2.default.createElement(_Components.NoBusCard, null),
 						this.hasBus(timetable.shuttleB) && timetable.shuttleB[0].type === 'toTerminal' && _react2.default.createElement(_Components.SimpleBusCard, {
 							href: 'shuttle/terminal',
 							type: timetable.shuttleB[0].type,
 							now: this.state.now,
-							time: (0, _moment2.default)(timetable.shuttleB[0].time, 'H:mm'),
-							ripple: true
+							time: (0, _moment2.default)(timetable.shuttleB[0].time, 'H:mm')
 						}),
 						_react2.default.createElement(
 							'div',
@@ -89064,8 +89062,7 @@
 							href: 'subway',
 							type: timetable.subway[0].type,
 							now: this.state.now,
-							time: (0, _moment2.default)(timetable.subway[0].time, 'H:mm'),
-							ripple: true
+							time: (0, _moment2.default)(timetable.subway[0].time, 'H:mm')
 						}) : _react2.default.createElement(_Components.NoBusCard, null),
 						_react2.default.createElement(
 							'div',
@@ -89076,8 +89073,7 @@
 							href: 'terminal',
 							type: timetable.terminal[0].type,
 							now: this.state.now,
-							time: (0, _moment2.default)(timetable.terminal[0].time, 'H:mm'),
-							ripple: true
+							time: (0, _moment2.default)(timetable.terminal[0].time, 'H:mm')
 						}) : _react2.default.createElement(_Components.NoBusCard, null),
 						_react2.default.createElement(
 							'div',
@@ -89088,8 +89084,7 @@
 							href: 'dorm',
 							type: timetable.dorm[0].type,
 							now: this.state.now,
-							time: (0, _moment2.default)(timetable.dorm[0].time, 'H:mm'),
-							ripple: true
+							time: (0, _moment2.default)(timetable.dorm[0].time, 'H:mm')
 						}) : _react2.default.createElement(_Components.NoBusCard, null)
 					);
 				}
@@ -89101,7 +89096,6 @@
 
 				var swipeItems = [_react2.default.createElement(_Components.PedaloCard, {
 					pedalo: this.props.pedalo,
-					ripple: true,
 					onClick: function onClick() {
 						return _this4.props.fetchPedalo();
 					}
