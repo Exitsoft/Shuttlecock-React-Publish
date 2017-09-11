@@ -25020,14 +25020,14 @@
 
 	var _TimeActionCreator = __webpack_require__(224);
 
-	var _PedaloActionCreator = __webpack_require__(229);
+	var _PedalroActionCreator = __webpack_require__(229);
 
 	var _redux = __webpack_require__(191);
 
 	var initialState = {
 		text: 'initial State',
 		timetable: null,
-		pedalo: null
+		Pedalro: null
 	}; /*
 	   * Author: @nayunhwan (github.com/nayunhwan)
 	   * Email: nayunhwan.dev@mgail.com
@@ -25042,9 +25042,9 @@
 				return Object.assign({}, state, {
 					timetable: action.timetable
 				});
-			case _PedaloActionCreator.GET_PEDALO:
+			case _PedalroActionCreator.GET_PEDALRO:
 				return Object.assign({}, state, {
-					pedalo: action.pedalo
+					Pedalro: action.Pedalro
 				});
 			default:
 				return state;
@@ -25636,7 +25636,7 @@
 	Object.defineProperty(exports, "__esModule", {
 		value: true
 	});
-	exports.getPedalo = exports.GET_PEDALO = undefined;
+	exports.getPedalro = exports.GET_PEDALRO = undefined;
 
 	var _WebRequestUtil = __webpack_require__(225);
 
@@ -25644,24 +25644,24 @@
 
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
-	var GET_PEDALO = exports.GET_PEDALO = 'GET_PEDALO'; /*
-	                                                    * Author: @nayunhwan (github.com/nayunhwan)
-	                                                    * Email: nayunhwan.dev@mgail.com
-	                                                    */
+	var GET_PEDALRO = exports.GET_PEDALRO = 'GET_PEDALRO'; /*
+	                                                       * Author: @nayunhwan (github.com/nayunhwan)
+	                                                       * Email: nayunhwan.dev@mgail.com
+	                                                       */
 
-	var getPedalo = exports.getPedalo = function getPedalo() {
-		return getPedalo_request();
+	var getPedalro = exports.getPedalro = function getPedalro() {
+		return getPedalro_request();
 	};
 
-	var getPedalo_request = function getPedalo_request() {
-		var url = 'api/pedalo/';
-		return WebRequestUtil.getJson(url, getPedalo_response);
+	var getPedalro_request = function getPedalro_request() {
+		var url = 'api/Pedalo/';
+		return WebRequestUtil.getJson(url, getPedalro_response);
 	};
 
-	var getPedalo_response = function getPedalo_response(json) {
+	var getPedalro_response = function getPedalro_response(json) {
 		return {
-			type: GET_PEDALO,
-			pedalo: json
+			type: GET_PEDALRO,
+			Pedalro: json
 		};
 	};
 
@@ -25697,7 +25697,7 @@
 
 	exports = module.exports = __webpack_require__(232)();
 	exports.push([module.id, "@import url(//cdn.rawgit.com/puts-blog/NanumSquare/master/NanumSquare.css);", ""]);
-	exports.push([module.id, "/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n\n.ActionBar {\n  position: absolute;\n  top: 0;\n  color: #333333;\n  background: white;\n  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);\n  border-bottom-left-radius: .5rem;\n  border-bottom-right-radius: .5rem;\n  width: 100%;\n  padding: 1.2rem 1rem;\n  margin-bottom: .5rem;\n  text-align: center;\n  z-index: 1; }\n  .ActionBar .xi-bars {\n    padding-top: 2.5px;\n    margin-right: 2rem;\n    float: left; }\n  .ActionBar .title {\n    margin-left: -3rem;\n    font-weight: 600;\n    font-size: 1.1rem; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.busBar {\n  background: white;\n  color: #333333;\n  padding: 8rem 20px;\n  padding-bottom: 6rem; }\n  .busBar .fromTo {\n    text-align: center; }\n    .busBar .fromTo .label {\n      text-align: center;\n      font-size: 0.5rem; }\n    .busBar .fromTo .from {\n      display: inline-block;\n      padding-right: 1.5rem;\n      margin: 0; }\n    .busBar .fromTo .to {\n      display: inline-block;\n      padding-left: 1.5rem;\n      margin: 0; }\n  .busBar .bus {\n    box-sizing: border-box;\n    position: relative;\n    display: inline-block;\n    width: 1rem;\n    height: 1rem;\n    background: #333333;\n    border-radius: 100%; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.card {\n  display: flex;\n  background: white;\n  padding: 1.25rem;\n  margin: 1rem;\n  border-radius: 4.5px;\n  box-shadow: 0px 0px 3px rgba(10, 10, 10, 0.08); }\n  .card:hover {\n    color: inherit; }\n  .card > .content {\n    display: block;\n    width: 100%; }\n  .card .busBarCard {\n    background: white;\n    padding: 20px; }\n    .card .busBarCard .bus {\n      box-sizing: border-box;\n      position: relative;\n      display: inline-block;\n      width: 24px;\n      height: 24px;\n      background: black;\n      border-radius: 100%; }\n\n.ripple {\n  position: relative;\n  overflow: hidden;\n  transform: translate3d(0, 0, 0); }\n  .ripple:after {\n    content: \"\";\n    display: block;\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    top: 0;\n    left: 0;\n    pointer-events: none;\n    background-image: radial-gradient(circle, #000 10%, transparent 10.01%);\n    background-repeat: no-repeat;\n    background-position: 50%;\n    transform: scale(10, 10);\n    opacity: 0;\n    transition: transform .3s, opacity .3s; }\n  .ripple:active:after {\n    transform: scale(0, 0);\n    opacity: .2;\n    transition: 0s; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.busCard .content {\n  display: flex; }\n  .busCard .content .icon-wrapper {\n    float: left;\n    margin-right: 2.5rem;\n    text-align: center; }\n    .busCard .content .icon-wrapper .icon {\n      color: #0c9fdd;\n      font-size: 2rem;\n      margin-bottom: .5rem; }\n    .busCard .content .icon-wrapper .label {\n      font-weight: bold; }\n  .busCard .content .description {\n    padding-top: 0.4rem;\n    align-items: center;\n    justify-content: center; }\n    .busCard .content .description .timer {\n      font-weight: bold;\n      font-size: 1.5rem;\n      margin-bottom: .25rem; }\n      .busCard .content .description .timer-description {\n        font-size: .75rem;\n        color: #777777; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.mainCard {\n  margin: auto;\n  margin-top: -1rem;\n  margin-bottom: 1rem;\n  border-bottom-left-radius: 6px;\n  border-bottom-right-radius: 6px; }\n  .mainCard .content {\n    padding-top: 1.5rem; }\n    .mainCard .content .timetableInfo {\n      float: right;\n      font-weight: 600; }\n    .mainCard .content .icon-wrapper {\n      color: #0c9fdd;\n      display: inline-block;\n      font-size: 1.1rem;\n      margin-bottom: .5rem; }\n    .mainCard .content .timer {\n      font-size: 2.25rem;\n      font-weight: 800;\n      margin: 1rem auto;\n      color: #333333; }\n      .mainCard .content .timer-description {\n        color: #777777; }\n    .mainCard .content .pedalo {\n      margin-top: 1rem; }\n      .mainCard .content .pedalo .pedaloValue {\n        font-size: 1.5rem; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.noBusCard {\n  border-left: 3.5px solid #EB624B; }\n  .noBusCard .content > .icon {\n    color: #EB624B;\n    vertical-align: -2px;\n    font-size: 1.2rem; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.noticeCard > .content .cardHeader {\n  font-size: 1.2rem;\n  font-weight: bold;\n  margin-bottom: 1rem; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.pedaloCard > .loading {\n  font-size: 1.25rem; }\n  .pedaloCard > .loading .spinner {\n    margin-right: 1rem;\n    margin-left: 1rem; }\n\n.pedaloCard > .content .cardHeader {\n  margin-bottom: 1rem; }\n  .pedaloCard > .content .cardHeader .label {\n    color: #28CA6C;\n    font-size: 1.2rem;\n    font-weight: bold; }\n  .pedaloCard > .content .cardHeader-description {\n    word-break: keep-all;\n    margin-top: .25rem;\n    font-size: .875rem;\n    color: #777777; }\n  .pedaloCard > .content .cardHeader__updateTime {\n    font-size: .5rem;\n    color: #BBBBBB; }\n\n.pedaloCard > .content .cardBody .label {\n  font-weight: bold; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.simpleBusCard .content {\n  display: flex; }\n  .simpleBusCard .content .icon-wrapper {\n    float: left;\n    margin-right: 2.5rem;\n    text-align: center; }\n    .simpleBusCard .content .icon-wrapper .icon {\n      color: #0c9fdd;\n      font-size: 2rem;\n      margin-bottom: .5rem; }\n    .simpleBusCard .content .icon-wrapper .label {\n      font-weight: bold; }\n  .simpleBusCard .content .description {\n    padding-top: 0.4rem;\n    align-items: center;\n    justify-content: center; }\n    .simpleBusCard .content .description .timer {\n      font-weight: bold;\n      font-size: 1.5rem;\n      margin-bottom: .25rem; }\n      .simpleBusCard .content .description .timer-description {\n        font-size: .75rem;\n        color: #777777; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.circle {\n  display: flex;\n  color: #0c9fdd;\n  font-size: 2rem;\n  width: 4rem;\n  height: 4rem;\n  justify-content: center;\n  align-items: center;\n  border-radius: 100%; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\ninput {\n  width: 100%; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.paginator {\n  display: flex;\n  align-items: center;\n  justify-content: center; }\n  .paginator > ul {\n    margin: 0;\n    padding: 0; }\n  .paginator__indicator {\n    display: inline-block;\n    background: #999999;\n    width: 8px;\n    height: 8px;\n    border-radius: 50%;\n    margin: 0 .2rem;\n    transition: background 0.5s ease; }\n    .paginator__indicator.active {\n      background: #555555;\n      transition: background 0.5s ease;\n      vertical-align: -1px;\n      width: 10px;\n      height: 10px; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.pulse {\n  display: inline-block;\n  margin-right: .5rem;\n  margin-bottom: .25rem;\n  width: 9px;\n  height: 9px;\n  border-radius: 50%;\n  animation: pulse 2s infinite;\n  cursor: pointer; }\n  .pulse.blue {\n    background: #0c9fdd;\n    box-shadow: 0 0 0 rgba(12, 159, 221, 0.4); }\n  .pulse.green {\n    background: #28CA6C;\n    box-shadow: 0 0 0 rgba(40, 202, 108, 0.4); }\n  .pulse.purple {\n    background: #604B9C;\n    box-shadow: 0 0 0 rgba(96, 75, 156, 0.4); }\n  .pulse.red {\n    background: #EB624B;\n    box-shadow: 0 0 0 rgba(235, 98, 75, 0.4); }\n\n.pulse:hover {\n  animation: none; }\n\n@-webkit-keyframes pulse {\n  0% {\n    -webkit-box-shadow: 0 0 0 0 inherit; }\n  70% {\n    -webkit-box-shadow: 0 0 0 7px transparent; }\n  100% {\n    -webkit-box-shadow: 0 0 0 0 transparent; } }\n\n@keyframes pulse {\n  0% {\n    -moz-box-shadow: 0 0 0 0 inherit;\n    box-shadow: 0 0 0 0 inherit; }\n  70% {\n    -moz-box-shadow: 0 0 0 7px transparent;\n    box-shadow: 0 0 0 7px transparent; }\n  100% {\n    -moz-box-shadow: 0 0 0 0 transparent;\n    box-shadow: 0 0 0 0 transparent; } }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.refreshButton {\n  position: absolute;\n  align-items: center;\n  justify-content: center;\n  width: 4rem;\n  height: 4rem;\n  color: white;\n  font-size: 1.2rem;\n  border-radius: 50%;\n  background: #555555;\n  position: fixed;\n  bottom: 2rem;\n  right: 1rem;\n  box-shadow: 0 3px 3px rgba(10, 10, 10, 0.3); }\n\n.spinner {\n  color: #0c9fdd;\n  text-indent: -9999em;\n  overflow: hidden;\n  width: 1em;\n  height: 1em;\n  border-radius: 50%;\n  position: relative;\n  -webkit-transform: translateZ(0);\n  -ms-transform: translateZ(0);\n  transform: translateZ(0);\n  -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;\n  animation: load6 1.7s infinite ease, round 1.7s infinite ease; }\n\n@-webkit-keyframes load6 {\n  0% {\n    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; }\n  5%,\n  95% {\n    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; }\n  10%,\n  59% {\n    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em; }\n  20% {\n    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em; }\n  38% {\n    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em; }\n  100% {\n    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; } }\n\n@keyframes load6 {\n  0% {\n    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; }\n  5%,\n  95% {\n    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; }\n  10%,\n  59% {\n    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em; }\n  20% {\n    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em; }\n  38% {\n    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em; }\n  100% {\n    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; } }\n\n@-webkit-keyframes round {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg); }\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n@keyframes round {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg); }\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.homeContent {\n  overflow-y: scroll;\n  margin-top: 52.59px;\n  height: calc(100% - 52.59px); }\n  .homeContent__label {\n    color: #555555;\n    margin-left: 1rem;\n    font-size: 1rem;\n    font-weight: bold; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.infoContent {\n  padding: 1rem;\n  padding-top: 5rem; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.mainContent {\n  overflow-y: scroll;\n  margin-top: 52.59px;\n  height: calc(100% - 52.59px); }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.sidebarContent {\n  background: white;\n  width: 280px;\n  min-height: 100%;\n  padding-top: 54px; }\n  .sidebarContent .topBanner {\n    position: absolute;\n    background: white;\n    font-weight: 800;\n    top: 0px;\n    width: 100%;\n    padding: 1.2rem;\n    z-index: 1;\n    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2); }\n  .sidebarContent .header {\n    margin: 0px inherit;\n    padding: 10px;\n    padding-left: 12px;\n    font-size: 1.1rem;\n    font-weight: bold; }\n  .sidebarContent .itemList {\n    list-style: none;\n    padding: 0px; }\n    .sidebarContent .itemList .item {\n      font-size: 1rem;\n      padding: 12px;\n      transition: 0.2s;\n      cursor: pointer; }\n      .sidebarContent .itemList .item:hover {\n        background: #EEEEEE;\n        transition: 0.2s; }\n      .sidebarContent .itemList .item.active {\n        background: #f3f3f3;\n        color: #0c9fdd; }\n      .sidebarContent .itemList .item .xi-x {\n        margin-right: 15px; }\n  .sidebarContent hr {\n    margin: 1rem; }\n  .sidebarContent__bottom {\n    position: absolute;\n    bottom: 20px; }\n    .sidebarContent__bottom ul .item {\n      font-size: 1.1rem;\n      font-weight: bold; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n* {\n  margin: auto 0;\n  font-family: 'NanumSquare', sans-serif;\n  -webkit-touch-callout: none;\n  /* iOS Safari */\n  -webkit-user-select: none;\n  /* Safari */\n  -khtml-user-select: none;\n  /* Konqueror HTML */\n  -moz-user-select: none;\n  /* Firefox */\n  -ms-user-select: none;\n  /* Internet Explorer/Edge */\n  user-select: none;\n  /* Non-prefixed version, currently\n                                  supported by Chrome and Opera */ }\n\nhtml {\n  height: 100%;\n  overflow: hidden; }\n\nbody {\n  height: 100%;\n  overflow: auto; }\n\nhtml,\nbody {\n  margin: 0 0;\n  overflow-y: scroll;\n  -webkit-overflow-scrolling: touch; }\n\nbody {\n  background: #F2F2F2;\n  color: #333333; }\n\na {\n  text-decoration: none;\n  color: inherit; }\n  a:visited {\n    color: inherit; }\n\n.clear:after {\n  display: block;\n  clear: both;\n  content: \" \"; }\n\n.left {\n  float: left; }\n\n.right {\n  float: right; }\n\n.text-center {\n  text-align: center; }\n\n.flex {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center; }\n  .flex .item {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    flex-grow: 1; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.mainPage {\n  position: relative;\n  overflow: scroll;\n  height: 100%;\n  max-height: 100%;\n  -webkit-overflow-scrolling: touch; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n", ""]);
+	exports.push([module.id, "/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n\n.ActionBar {\n  position: absolute;\n  top: 0;\n  color: #333333;\n  background: white;\n  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);\n  border-bottom-left-radius: .5rem;\n  border-bottom-right-radius: .5rem;\n  width: 100%;\n  padding: 1.2rem 1rem;\n  margin-bottom: .5rem;\n  text-align: center;\n  z-index: 1; }\n  .ActionBar .xi-bars {\n    padding-top: 2.5px;\n    margin-right: 2rem;\n    float: left; }\n  .ActionBar .title {\n    margin-left: -3rem;\n    font-weight: 600;\n    font-size: 1.1rem; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.busBar {\n  background: white;\n  color: #333333;\n  padding: 8rem 20px;\n  padding-bottom: 6rem; }\n  .busBar .fromTo {\n    text-align: center; }\n    .busBar .fromTo .label {\n      text-align: center;\n      font-size: 0.5rem; }\n    .busBar .fromTo .from {\n      display: inline-block;\n      padding-right: 1.5rem;\n      margin: 0; }\n    .busBar .fromTo .to {\n      display: inline-block;\n      padding-left: 1.5rem;\n      margin: 0; }\n  .busBar .bus {\n    box-sizing: border-box;\n    position: relative;\n    display: inline-block;\n    font-size: 1.5rem; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.card {\n  display: flex;\n  background: white;\n  padding: 1.25rem;\n  margin: 1rem;\n  border-radius: 4.5px;\n  box-shadow: 0px 0px 3px rgba(10, 10, 10, 0.08); }\n  .card:hover {\n    color: inherit; }\n  .card > .content {\n    display: block;\n    width: 100%; }\n  .card .busBarCard {\n    background: white;\n    padding: 20px; }\n    .card .busBarCard .bus {\n      box-sizing: border-box;\n      position: relative;\n      display: inline-block;\n      width: 24px;\n      height: 24px;\n      background: black;\n      border-radius: 100%; }\n\n.ripple {\n  position: relative;\n  overflow: hidden;\n  transform: translate3d(0, 0, 0); }\n  .ripple:after {\n    content: \"\";\n    display: block;\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    top: 0;\n    left: 0;\n    pointer-events: none;\n    background-image: radial-gradient(circle, #000 10%, transparent 10.01%);\n    background-repeat: no-repeat;\n    background-position: 50%;\n    transform: scale(10, 10);\n    opacity: 0;\n    transition: transform .3s, opacity .3s; }\n  .ripple:active:after {\n    transform: scale(0, 0);\n    opacity: .2;\n    transition: 0s; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.busCard .content {\n  display: flex; }\n  .busCard .content .icon-wrapper {\n    float: left;\n    margin-right: 2.5rem;\n    text-align: center; }\n    .busCard .content .icon-wrapper .icon {\n      color: #0c9fdd;\n      font-size: 2rem;\n      margin-bottom: .5rem; }\n    .busCard .content .icon-wrapper .label {\n      font-weight: bold; }\n  .busCard .content .description {\n    padding-top: 0.4rem;\n    align-items: center;\n    justify-content: center; }\n    .busCard .content .description .timer {\n      font-weight: bold;\n      font-size: 1.5rem;\n      margin-bottom: .25rem; }\n      .busCard .content .description .timer-description {\n        font-size: .75rem;\n        color: #777777; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.mainCard {\n  margin: auto;\n  margin-top: -1rem;\n  margin-bottom: 1rem;\n  border-bottom-left-radius: 6px;\n  border-bottom-right-radius: 6px; }\n  .mainCard .content {\n    padding-top: 1.5rem; }\n    .mainCard .content .timetableInfo {\n      float: right;\n      font-weight: 600; }\n    .mainCard .content .icon-wrapper {\n      color: #0c9fdd;\n      display: inline-block;\n      font-size: 1.1rem;\n      margin-bottom: .5rem; }\n    .mainCard .content .timer {\n      font-size: 2.25rem;\n      font-weight: 800;\n      margin: 1rem auto;\n      color: #333333; }\n      .mainCard .content .timer-description {\n        color: #777777; }\n    .mainCard .content .Pedalro {\n      margin-top: 1rem; }\n      .mainCard .content .Pedalro .PedalroValue {\n        font-size: 1.5rem; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.noBusCard {\n  border-left: 3.5px solid #EB624B; }\n  .noBusCard .content > .icon {\n    color: #EB624B;\n    vertical-align: -2px;\n    font-size: 1.2rem; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.noticeCard > .content .cardHeader {\n  font-size: 1.2rem;\n  font-weight: bold;\n  margin-bottom: 1rem; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.PedalroCard > .loading {\n  font-size: 1.25rem; }\n  .PedalroCard > .loading .spinner {\n    margin-right: 1rem;\n    margin-left: 1rem; }\n\n.PedalroCard > .content .cardHeader {\n  margin-bottom: 1rem; }\n  .PedalroCard > .content .cardHeader .label {\n    color: #0bb550;\n    font-size: 1.2rem;\n    font-weight: bold; }\n  .PedalroCard > .content .cardHeader-description {\n    word-break: keep-all;\n    margin-top: .25rem;\n    font-size: .875rem;\n    color: #777777; }\n  .PedalroCard > .content .cardHeader__updateTime {\n    font-size: .5rem;\n    color: #BBBBBB; }\n\n.PedalroCard > .content .cardBody .label {\n  font-weight: bold; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.simpleBusCard .content {\n  display: flex; }\n  .simpleBusCard .content .icon-wrapper {\n    float: left;\n    margin-right: 2.5rem;\n    text-align: center; }\n    .simpleBusCard .content .icon-wrapper .icon {\n      color: #0c9fdd;\n      font-size: 2rem;\n      margin-bottom: .5rem; }\n    .simpleBusCard .content .icon-wrapper .label {\n      font-weight: bold; }\n  .simpleBusCard .content .description {\n    padding-top: 0.4rem;\n    align-items: center;\n    justify-content: center; }\n    .simpleBusCard .content .description .timer {\n      font-weight: bold;\n      font-size: 1.5rem;\n      margin-bottom: .25rem; }\n      .simpleBusCard .content .description .timer-description {\n        font-size: .75rem;\n        color: #777777; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.circle {\n  display: flex;\n  color: #0c9fdd;\n  font-size: 2rem;\n  width: 4rem;\n  height: 4rem;\n  justify-content: center;\n  align-items: center;\n  border-radius: 100%; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\ninput {\n  width: 100%; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.paginator {\n  display: flex;\n  align-items: center;\n  justify-content: center; }\n  .paginator > ul {\n    margin: 0;\n    padding: 0; }\n  .paginator__indicator {\n    display: inline-block;\n    background: #999999;\n    width: 8px;\n    height: 8px;\n    border-radius: 50%;\n    margin: 0 .2rem;\n    transition: background 0.5s ease; }\n    .paginator__indicator.active {\n      background: #555555;\n      transition: background 0.5s ease;\n      vertical-align: -1px;\n      width: 10px;\n      height: 10px; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.pulse {\n  display: inline-block;\n  margin-right: .5rem;\n  margin-bottom: .25rem;\n  width: 9px;\n  height: 9px;\n  border-radius: 50%;\n  animation: pulse 2s infinite;\n  cursor: pointer; }\n  .pulse.blue {\n    background: #0c9fdd;\n    box-shadow: 0 0 0 rgba(12, 159, 221, 0.4); }\n  .pulse.green {\n    background: #0bb550;\n    box-shadow: 0 0 0 rgba(11, 181, 80, 0.4); }\n  .pulse.purple {\n    background: #604B9C;\n    box-shadow: 0 0 0 rgba(96, 75, 156, 0.4); }\n  .pulse.red {\n    background: #EB624B;\n    box-shadow: 0 0 0 rgba(235, 98, 75, 0.4); }\n\n.pulse:hover {\n  animation: none; }\n\n@-webkit-keyframes pulse {\n  0% {\n    -webkit-box-shadow: 0 0 0 0 inherit; }\n  70% {\n    -webkit-box-shadow: 0 0 0 7px transparent; }\n  100% {\n    -webkit-box-shadow: 0 0 0 0 transparent; } }\n\n@keyframes pulse {\n  0% {\n    -moz-box-shadow: 0 0 0 0 inherit;\n    box-shadow: 0 0 0 0 inherit; }\n  70% {\n    -moz-box-shadow: 0 0 0 7px transparent;\n    box-shadow: 0 0 0 7px transparent; }\n  100% {\n    -moz-box-shadow: 0 0 0 0 transparent;\n    box-shadow: 0 0 0 0 transparent; } }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.refreshButton {\n  position: absolute;\n  align-items: center;\n  justify-content: center;\n  width: 4rem;\n  height: 4rem;\n  color: white;\n  font-size: 1.2rem;\n  border-radius: 50%;\n  background: #555555;\n  position: fixed;\n  bottom: 2rem;\n  right: 1rem;\n  box-shadow: 0 3px 3px rgba(10, 10, 10, 0.3); }\n\n.spinner {\n  color: #0c9fdd;\n  text-indent: -9999em;\n  overflow: hidden;\n  width: 1em;\n  height: 1em;\n  border-radius: 50%;\n  position: relative;\n  -webkit-transform: translateZ(0);\n  -ms-transform: translateZ(0);\n  transform: translateZ(0);\n  -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;\n  animation: load6 1.7s infinite ease, round 1.7s infinite ease; }\n\n@-webkit-keyframes load6 {\n  0% {\n    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; }\n  5%,\n  95% {\n    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; }\n  10%,\n  59% {\n    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em; }\n  20% {\n    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em; }\n  38% {\n    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em; }\n  100% {\n    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; } }\n\n@keyframes load6 {\n  0% {\n    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; }\n  5%,\n  95% {\n    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; }\n  10%,\n  59% {\n    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em; }\n  20% {\n    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em; }\n  38% {\n    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em; }\n  100% {\n    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; } }\n\n@-webkit-keyframes round {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg); }\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n@keyframes round {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg); }\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.homeContent {\n  overflow-y: scroll;\n  margin-top: 52.59px;\n  height: calc(100% - 52.59px); }\n  .homeContent__label {\n    color: #555555;\n    margin-left: 1rem;\n    font-size: 1rem;\n    font-weight: bold; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.infoContent {\n  padding: 1rem;\n  padding-top: 5rem; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.mainContent {\n  overflow-y: scroll;\n  margin-top: 52.59px;\n  height: calc(100% - 52.59px); }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.sidebarContent {\n  background: white;\n  width: 280px;\n  min-height: 100%;\n  padding-top: 54px; }\n  .sidebarContent .topBanner {\n    position: absolute;\n    background: white;\n    font-weight: 800;\n    top: 0px;\n    width: 100%;\n    padding: 1.2rem;\n    z-index: 1;\n    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2); }\n  .sidebarContent .header {\n    margin: 0px inherit;\n    padding: 10px;\n    padding-left: 12px;\n    font-size: 1.1rem;\n    font-weight: bold; }\n  .sidebarContent .itemList {\n    list-style: none;\n    padding: 0px; }\n    .sidebarContent .itemList .item {\n      font-size: 1rem;\n      padding: 12px;\n      transition: 0.2s;\n      cursor: pointer; }\n      .sidebarContent .itemList .item:hover {\n        background: #EEEEEE;\n        transition: 0.2s; }\n      .sidebarContent .itemList .item.active {\n        background: #f3f3f3;\n        color: #0c9fdd; }\n      .sidebarContent .itemList .item .xi-x {\n        margin-right: 15px; }\n  .sidebarContent hr {\n    margin: 1rem; }\n  .sidebarContent__bottom {\n    position: absolute;\n    bottom: 20px; }\n    .sidebarContent__bottom ul .item {\n      font-size: 1.1rem;\n      font-weight: bold; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n* {\n  margin: auto 0;\n  font-family: 'NanumSquare', sans-serif;\n  -webkit-touch-callout: none;\n  /* iOS Safari */\n  -webkit-user-select: none;\n  /* Safari */\n  -khtml-user-select: none;\n  /* Konqueror HTML */\n  -moz-user-select: none;\n  /* Firefox */\n  -ms-user-select: none;\n  /* Internet Explorer/Edge */\n  user-select: none;\n  /* Non-prefixed version, currently\n                                  supported by Chrome and Opera */ }\n\nhtml {\n  height: 100%;\n  overflow: hidden; }\n\nbody {\n  height: 100%;\n  overflow: auto; }\n\nhtml,\nbody {\n  margin: 0 0;\n  overflow-y: scroll;\n  -webkit-overflow-scrolling: touch; }\n\nbody {\n  background: #F2F2F2;\n  color: #333333; }\n\na {\n  text-decoration: none;\n  color: inherit; }\n  a:visited {\n    color: inherit; }\n\n.clear:after {\n  display: block;\n  clear: both;\n  content: \" \"; }\n\n.left {\n  float: left; }\n\n.right {\n  float: right; }\n\n.text-center {\n  text-align: center; }\n\n.flex {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center; }\n  .flex .item {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    flex-grow: 1; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.mainPage {\n  position: relative;\n  overflow: scroll;\n  height: 100%;\n  max-height: 100%;\n  -webkit-overflow-scrolling: touch; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n", ""]);
 
 /***/ }),
 /* 232 */
@@ -26069,7 +26069,7 @@
 					_react2.default.createElement(
 						_reactRouter.Route,
 						{ path: '/' },
-						_react2.default.createElement(_reactRouter.IndexRoute, { title: 'ShuttleCock', selected: 'home', component: _Pages.MainPage }),
+						_react2.default.createElement(_reactRouter.IndexRoute, { title: 'Shuttlecock', selected: 'home', component: _Pages.MainPage }),
 						_react2.default.createElement(_reactRouter.Route, { path: '/shuttle/subway', title: C.TitleWithIcon.shuttleToSubway, selected: 'shuttleToSubway', component: _Pages.MainPage }),
 						_react2.default.createElement(_reactRouter.Route, { path: '/shuttle/terminal', title: C.TitleWithIcon.shuttleToTerminal, selected: 'shuttleToTerminal', component: _Pages.MainPage }),
 						_react2.default.createElement(_reactRouter.Route, { path: '/subway', title: C.TitleWithIcon.subway, selected: 'subway', component: _Pages.MainPage }),
@@ -31095,9 +31095,9 @@
 
 	var TimeActionCreator = _interopRequireWildcard(_TimeActionCreator);
 
-	var _PedaloActionCreator = __webpack_require__(229);
+	var _PedalroActionCreator = __webpack_require__(229);
 
-	var PedaloActionCreator = _interopRequireWildcard(_PedaloActionCreator);
+	var PedalroActionCreator = _interopRequireWildcard(_PedalroActionCreator);
 
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -31116,7 +31116,7 @@
 		return {
 			value: state.todos.text,
 			timetable: state.todos.timetable,
-			pedalo: state.todos.pedalo
+			Pedalro: state.todos.Pedalro
 		};
 	};
 
@@ -31139,13 +31139,13 @@
 			key: 'componentDidMount',
 			value: function componentDidMount() {
 				this.props.dispatch(TimeActionCreator.getTimetable('semester'));
-				this.props.dispatch(PedaloActionCreator.getPedalo());
+				this.props.dispatch(PedalroActionCreator.getPedalro());
 			}
 		}, {
-			key: 'fetchPedalo',
-			value: function fetchPedalo() {
+			key: 'fetchPedalro',
+			value: function fetchPedalro() {
 				console.log('fetch');
-				this.props.dispatch(PedaloActionCreator.getPedalo());
+				this.props.dispatch(PedalroActionCreator.getPedalro());
 			}
 		}, {
 			key: 'onSetSidebarOpen',
@@ -31160,7 +31160,7 @@
 				var selected = this.props.route.selected;
 				var _props = this.props,
 				    timetable = _props.timetable,
-				    pedalo = _props.pedalo;
+				    Pedalro = _props.Pedalro;
 
 
 				switch (selected) {
@@ -31168,9 +31168,9 @@
 						{
 							return _react2.default.createElement(_Contents.HomeContent, {
 								timetable: timetable,
-								pedalo: pedalo,
-								fetchPedalo: function fetchPedalo() {
-									return _this2.fetchPedalo();
+								Pedalro: Pedalro,
+								fetchPedalro: function fetchPedalro() {
+									return _this2.fetchPedalro();
 								}
 							});
 						}
@@ -31183,7 +31183,7 @@
 							return _react2.default.createElement(_Contents.MainContent, {
 								selected: selected,
 								timetable: timetable,
-								pedalo: pedalo
+								Pedalro: Pedalro
 							});
 						}
 				}
@@ -31239,7 +31239,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.SimpleBusCard = exports.PedaloCard = exports.NoticeCard = exports.NoBusCard = exports.MainCard = exports.Card = exports.BusCard = exports.Spinner = exports.RefreshButton = exports.Pulse = exports.Paginator = exports.LocationSelectBox = exports.Input = exports.CircleIcon = exports.BusBar = exports.ActionBar = undefined;
+	exports.SimpleBusCard = exports.PedalroCard = exports.NoticeCard = exports.NoBusCard = exports.MainCard = exports.Card = exports.BusCard = exports.Spinner = exports.RefreshButton = exports.Pulse = exports.Paginator = exports.LocationSelectBox = exports.Input = exports.CircleIcon = exports.BusBar = exports.ActionBar = undefined;
 
 	var _ActionBar2 = __webpack_require__(292);
 
@@ -31297,9 +31297,9 @@
 
 	var _NoticeCard3 = _interopRequireDefault(_NoticeCard2);
 
-	var _PedaloCard2 = __webpack_require__(1086);
+	var _PedalroCard2 = __webpack_require__(1086);
 
-	var _PedaloCard3 = _interopRequireDefault(_PedaloCard2);
+	var _PedalroCard3 = _interopRequireDefault(_PedalroCard2);
 
 	var _SimpleBusCard2 = __webpack_require__(1087);
 
@@ -31328,7 +31328,7 @@
 	exports.MainCard = _MainCard3.default;
 	exports.NoBusCard = _NoBusCard3.default;
 	exports.NoticeCard = _NoticeCard3.default;
-	exports.PedaloCard = _PedaloCard3.default;
+	exports.PedalroCard = _PedalroCard3.default;
 	exports.SimpleBusCard = _SimpleBusCard3.default;
 
 /***/ }),
@@ -31453,7 +31453,11 @@
 				return _react2.default.createElement(
 					"div",
 					{ className: "busBar" },
-					_react2.default.createElement("div", { className: "bus", style: { 'left': "calc(" + percent + "% - 12px)" } })
+					_react2.default.createElement(
+						"div",
+						{ className: "bus", style: { 'left': "calc(" + percent + "% - 12px)" } },
+						_react2.default.createElement("i", { className: "icon-bus" })
+					)
 				);
 			}
 		}]);
@@ -71544,7 +71548,7 @@
 		mainColor: '#0c9fdd',
 		subColor: '#53d9c4',
 		primaryColor: '#713cc3',
-		greenColor: '#28CA6C',
+		greenColor: '#0bb550',
 		purpleColor: '#604B9C',
 		mintColor: '#7EC3C5',
 		redColor: '#EB624B',
@@ -88190,7 +88194,7 @@
 			value: function renderContent() {
 				var type = this.props.type;
 				var _props = this.props,
-				    pedalo = _props.pedalo,
+				    Pedalro = _props.Pedalro,
 				    latestBus = _props.latestBus;
 
 
@@ -88258,54 +88262,7 @@
 							' \uC5D0 \uB3C4\uCC29\uD558\uB294 \uBC84\uC2A4\uC785\uB2C8\uB2E4.'
 						)
 					),
-					_react2.default.createElement(
-						'div',
-						{ className: 'pedalo clear' },
-						_react2.default.createElement(
-							'div',
-							{ className: 'icon-wrapper' },
-							_react2.default.createElement('i', { className: 'icon xi-bicycle' }),
-							_react2.default.createElement(
-								'span',
-								{ className: 'label' },
-								'\uD398\uB2EC\uB85C'
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 'clear' },
-							_react2.default.createElement(
-								'div',
-								{ className: 'left text-center' },
-								_react2.default.createElement(
-									'h3',
-									null,
-									'\uD55C\uC591\uB300 \uC0AC\uAC70\uB9AC'
-								),
-								pedalo && _react2.default.createElement(
-									'span',
-									{ className: 'pedaloValue' },
-									pedalo[0].val,
-									'\uB300'
-								)
-							),
-							_react2.default.createElement(
-								'div',
-								{ className: 'right text-center' },
-								_react2.default.createElement(
-									'h3',
-									null,
-									'\uD55C\uC591\uB300 \uAE30\uC219\uC0AC'
-								),
-								pedalo && _react2.default.createElement(
-									'span',
-									{ className: 'pedaloValue' },
-									pedalo[1].val,
-									'\uB300'
-								)
-							)
-						)
-					)
+					_react2.default.createElement(_Components.BusBar, { percent: 50 })
 				);
 			}
 		}, {
@@ -88508,21 +88465,21 @@
 	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               */
 
 	var defaultProps = {
-		pedalo: [],
+		Pedalro: [],
 		ripple: false
 	};
 	var propTypes = {
-		pedalo: _react.PropTypes.array,
+		Pedalro: _react.PropTypes.array,
 		ripple: _react.PropTypes.bool
 	};
 
-	var PedaloCard = function (_Component) {
-		_inherits(PedaloCard, _Component);
+	var PedalroCard = function (_Component) {
+		_inherits(PedalroCard, _Component);
 
-		function PedaloCard(props) {
-			_classCallCheck(this, PedaloCard);
+		function PedalroCard(props) {
+			_classCallCheck(this, PedalroCard);
 
-			var _this = _possibleConstructorReturn(this, (PedaloCard.__proto__ || Object.getPrototypeOf(PedaloCard)).call(this, props));
+			var _this = _possibleConstructorReturn(this, (PedalroCard.__proto__ || Object.getPrototypeOf(PedalroCard)).call(this, props));
 
 			_this.state = {
 				now: new _moment2.default(),
@@ -88531,7 +88488,7 @@
 			return _this;
 		}
 
-		_createClass(PedaloCard, [{
+		_createClass(PedalroCard, [{
 			key: 'refresh',
 			value: function refresh() {
 				this.setState({
@@ -88551,7 +88508,7 @@
 		}, {
 			key: 'renderContent',
 			value: function renderContent() {
-				var pedalo = this.props.pedalo;
+				var Pedalro = this.props.Pedalro;
 
 				if (this.state.isLoading) {
 					return _react2.default.createElement(
@@ -88577,7 +88534,7 @@
 									'div',
 									{ className: 'label' },
 									_react2.default.createElement('i', { className: 'icon xi-bicycle' }),
-									' Pedalo'
+									' Pedalro'
 								)
 							),
 							_react2.default.createElement(
@@ -88606,10 +88563,10 @@
 								{ className: 'label' },
 								'\uD55C\uC591\uB300 \uC0AC\uAC70\uB9AC'
 							),
-							pedalo && _react2.default.createElement(
+							Pedalro && _react2.default.createElement(
 								'span',
-								{ className: 'pedaloValue' },
-								pedalo[0].val,
+								{ className: 'PedalroValue' },
+								Pedalro[0].val,
 								' \uB300'
 							)
 						),
@@ -88621,10 +88578,10 @@
 								{ className: 'label' },
 								'\uD55C\uC591\uB300 \uAE30\uC219\uC0AC'
 							),
-							pedalo && _react2.default.createElement(
+							Pedalro && _react2.default.createElement(
 								'span',
-								{ className: 'pedaloValue' },
-								pedalo[1].val,
+								{ className: 'PedalroValue' },
+								Pedalro[1].val,
 								' \uB300'
 							)
 						)
@@ -88637,7 +88594,7 @@
 				var _this2 = this;
 
 				return _react2.default.createElement(_Components.Card, {
-					className: 'pedaloCard',
+					className: 'PedalroCard',
 					ripple: this.props.ripple,
 					content: this.renderContent(),
 					onClick: function onClick() {
@@ -88647,13 +88604,13 @@
 			}
 		}]);
 
-		return PedaloCard;
+		return PedalroCard;
 	}(_react.Component);
 
-	PedaloCard.defaultProps = defaultProps;
-	PedaloCard.propTypes = propTypes;
+	PedalroCard.defaultProps = defaultProps;
+	PedalroCard.propTypes = propTypes;
 
-	exports.default = PedaloCard;
+	exports.default = PedalroCard;
 
 /***/ }),
 /* 1087 */
@@ -88950,12 +88907,12 @@
 	var defaultProps = {
 		cardInfos: [],
 		timetable: null,
-		pedalo: null
+		Pedalro: null
 	};
 
 	var propTypes = {
 		timetable: _react.PropTypes.object,
-		pedalo: _react.PropTypes.object
+		Pedalro: _react.PropTypes.object
 	};
 
 	var HomeContent = function (_Component) {
@@ -89045,13 +89002,15 @@
 							href: 'shuttle/subway',
 							type: timetable.shuttleA[0].type,
 							now: this.state.now,
-							time: (0, _moment2.default)(timetable.shuttleA[0].time, 'H:mm')
+							time: (0, _moment2.default)(timetable.shuttleA[0].time, 'H:mm'),
+							ripple: true
 						}) : _react2.default.createElement(_Components.NoBusCard, null),
 						this.hasBus(timetable.shuttleB) && timetable.shuttleB[0].type === 'toTerminal' && _react2.default.createElement(_Components.SimpleBusCard, {
 							href: 'shuttle/terminal',
 							type: timetable.shuttleB[0].type,
 							now: this.state.now,
-							time: (0, _moment2.default)(timetable.shuttleB[0].time, 'H:mm')
+							time: (0, _moment2.default)(timetable.shuttleB[0].time, 'H:mm'),
+							ripple: true
 						}),
 						_react2.default.createElement(
 							'div',
@@ -89062,7 +89021,8 @@
 							href: 'subway',
 							type: timetable.subway[0].type,
 							now: this.state.now,
-							time: (0, _moment2.default)(timetable.subway[0].time, 'H:mm')
+							time: (0, _moment2.default)(timetable.subway[0].time, 'H:mm'),
+							ripple: true
 						}) : _react2.default.createElement(_Components.NoBusCard, null),
 						_react2.default.createElement(
 							'div',
@@ -89073,7 +89033,8 @@
 							href: 'terminal',
 							type: timetable.terminal[0].type,
 							now: this.state.now,
-							time: (0, _moment2.default)(timetable.terminal[0].time, 'H:mm')
+							time: (0, _moment2.default)(timetable.terminal[0].time, 'H:mm'),
+							ripple: true
 						}) : _react2.default.createElement(_Components.NoBusCard, null),
 						_react2.default.createElement(
 							'div',
@@ -89084,7 +89045,8 @@
 							href: 'dorm',
 							type: timetable.dorm[0].type,
 							now: this.state.now,
-							time: (0, _moment2.default)(timetable.dorm[0].time, 'H:mm')
+							time: (0, _moment2.default)(timetable.dorm[0].time, 'H:mm'),
+							ripple: true
 						}) : _react2.default.createElement(_Components.NoBusCard, null)
 					);
 				}
@@ -89094,10 +89056,10 @@
 			value: function render() {
 				var _this4 = this;
 
-				var swipeItems = [_react2.default.createElement(_Components.PedaloCard, {
-					pedalo: this.props.pedalo,
+				var swipeItems = [_react2.default.createElement(_Components.PedalroCard, {
+					Pedalro: this.props.Pedalro,
 					onClick: function onClick() {
-						return _this4.props.fetchPedalo();
+						return _this4.props.fetchPedalro();
 					}
 				}), _react2.default.createElement(_Components.NoticeCard, null), _react2.default.createElement(_Components.NoticeCard, null)];
 
@@ -89935,7 +89897,7 @@
 					_react2.default.createElement(
 						"h1",
 						null,
-						"ShuttleCock"
+						"Shuttlecock"
 					),
 					_react2.default.createElement(
 						"p",
@@ -90007,7 +89969,7 @@
 	var defaultProps = {
 		cardInfos: [],
 		timetable: null,
-		pedalo: null
+		Pedalro: null
 	};
 	var propTypes = {};
 
@@ -90084,7 +90046,7 @@
 
 				var _props2 = this.props,
 				    selected = _props2.selected,
-				    pedalo = _props2.pedalo;
+				    Pedalro = _props2.Pedalro;
 
 				var timetable = this.getTimetable();
 				var length = timetable ? timetable.length : 0;
@@ -90099,7 +90061,7 @@
 						type: timetable && timetable.length > 0 && timetable[0].type,
 						now: this.state.now,
 						latestBus: timetable && timetable.length > 0 && (0, _moment2.default)(timetable[0].time, 'H:mm'),
-						pedalo: pedalo && pedalo
+						Pedalro: Pedalro && Pedalro
 					}),
 					_react2.default.createElement(
 						'div',
@@ -90253,7 +90215,7 @@
 						_react2.default.createElement(
 							'h4',
 							null,
-							'ShuttleCock'
+							'Shuttlecock'
 						)
 					),
 					_react2.default.createElement(
