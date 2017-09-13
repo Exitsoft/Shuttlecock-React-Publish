@@ -25697,7 +25697,7 @@
 
 	exports = module.exports = __webpack_require__(232)();
 	exports.push([module.id, "@import url(//cdn.rawgit.com/puts-blog/NanumSquare/master/NanumSquare.css);", ""]);
-	exports.push([module.id, "/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n\n.ActionBar {\n  position: absolute;\n  top: 0;\n  color: #333333;\n  background: white;\n  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);\n  border-bottom-left-radius: .5rem;\n  border-bottom-right-radius: .5rem;\n  width: 100%;\n  padding: 1.2rem 1rem;\n  margin-bottom: .5rem;\n  text-align: center;\n  z-index: 1; }\n  .ActionBar .xi-bars {\n    padding-top: 2.5px;\n    margin-right: 2rem;\n    float: left; }\n  .ActionBar .title {\n    margin-left: -3rem;\n    font-weight: 600;\n    font-size: 1.1rem; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.busBar {\n  background: white;\n  color: #333333;\n  margin: 8rem 20px;\n  margin-bottom: 6rem;\n  border-top: 1px solid black; }\n  .busBar .bus {\n    box-sizing: border-box;\n    position: relative;\n    display: inline-block;\n    font-size: 1.5rem; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.card {\n  display: flex;\n  background: white;\n  padding: 1.25rem;\n  margin: 1rem;\n  border-radius: 4.5px;\n  box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 2px 0px; }\n  .card:hover {\n    color: inherit; }\n  .card > .content {\n    display: block;\n    width: 100%; }\n  .card .busBarCard {\n    background: white;\n    padding: 20px; }\n    .card .busBarCard .bus {\n      box-sizing: border-box;\n      position: relative;\n      display: inline-block;\n      width: 24px;\n      height: 24px;\n      background: black;\n      border-radius: 100%; }\n\n.ripple {\n  position: relative;\n  overflow: hidden;\n  transform: translate3d(0, 0, 0); }\n  .ripple:after {\n    content: \"\";\n    display: block;\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    top: 0;\n    left: 0;\n    pointer-events: none;\n    background-image: radial-gradient(circle, #000 10%, transparent 10.01%);\n    background-repeat: no-repeat;\n    background-position: 50%;\n    transform: scale(10, 10);\n    opacity: 0;\n    transition: transform .3s, opacity .3s; }\n  .ripple:active:after {\n    transform: scale(0, 0);\n    opacity: .2;\n    transition: 0s; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.busCard .content {\n  display: flex; }\n  .busCard .content .icon-wrapper {\n    float: left;\n    margin-right: 2.5rem;\n    text-align: center; }\n    .busCard .content .icon-wrapper .icon {\n      color: #0c9fdd;\n      font-size: 2rem;\n      margin-bottom: .5rem; }\n    .busCard .content .icon-wrapper .label {\n      font-weight: bold; }\n  .busCard .content .description {\n    padding-top: 0.4rem;\n    align-items: center;\n    justify-content: center; }\n    .busCard .content .description .timer {\n      font-weight: bold;\n      font-size: 1.5rem;\n      margin-bottom: .25rem; }\n      .busCard .content .description .timer-description {\n        font-size: .75rem;\n        color: #777777; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.mainCard {\n  margin: auto;\n  margin-top: -1rem;\n  margin-bottom: 1rem;\n  border-bottom-left-radius: 6px;\n  border-bottom-right-radius: 6px; }\n  .mainCard .content {\n    padding-top: 1.5rem; }\n    .mainCard .content .timetableInfo {\n      float: right;\n      font-weight: 600; }\n    .mainCard .content .icon-wrapper {\n      color: #0c9fdd;\n      display: inline-block;\n      font-size: 1.1rem;\n      margin-bottom: .5rem; }\n    .mainCard .content .timer {\n      font-size: 2.25rem;\n      font-weight: 800;\n      margin: 1rem auto;\n      color: #333333; }\n      .mainCard .content .timer-description {\n        color: #777777; }\n    .mainCard .content .Pedalro {\n      margin-top: 1rem; }\n      .mainCard .content .Pedalro .PedalroValue {\n        font-size: 1.5rem; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.noBusCard {\n  border-left: 3.5px solid #EB624B; }\n  .noBusCard .content > .icon {\n    color: #EB624B;\n    vertical-align: -2px;\n    font-size: 1.2rem; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.noticeCard {\n  margin: auto;\n  margin-top: -1rem;\n  margin-bottom: 1rem;\n  border-bottom-left-radius: 6px;\n  border-bottom-right-radius: 6px; }\n  .noticeCard > .content {\n    padding-top: 1.5rem; }\n    .noticeCard > .content .cardHeader {\n      font-size: 1.2rem;\n      font-weight: bold;\n      margin-bottom: 1rem; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.PedalroCard > .loading {\n  font-size: 1.25rem; }\n  .PedalroCard > .loading .spinner {\n    margin-right: 1rem;\n    margin-left: 1rem; }\n\n.PedalroCard > .content .cardHeader {\n  margin-bottom: 1rem; }\n  .PedalroCard > .content .cardHeader .label {\n    color: #0bb550;\n    font-size: 1.2rem;\n    font-weight: bold; }\n  .PedalroCard > .content .cardHeader-description {\n    word-break: keep-all;\n    margin-top: .25rem;\n    font-size: .875rem;\n    color: #777777; }\n  .PedalroCard > .content .cardHeader__updateTime {\n    font-size: .5rem;\n    color: #BBBBBB; }\n\n.PedalroCard > .content .cardBody .label {\n  font-weight: bold; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.simpleBusCard .content {\n  display: flex; }\n  .simpleBusCard .content .icon-wrapper {\n    float: left;\n    margin-right: 2.5rem;\n    text-align: center; }\n    .simpleBusCard .content .icon-wrapper .icon {\n      color: #0c9fdd;\n      font-size: 2rem;\n      margin-bottom: .5rem; }\n    .simpleBusCard .content .icon-wrapper .label {\n      font-weight: bold; }\n  .simpleBusCard .content .description {\n    padding-top: 0.4rem;\n    align-items: center;\n    justify-content: center; }\n    .simpleBusCard .content .description .timer {\n      font-weight: bold;\n      font-size: 1.5rem;\n      margin-bottom: .25rem; }\n      .simpleBusCard .content .description .timer-description {\n        font-size: .75rem;\n        color: #777777; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.circle {\n  display: flex;\n  color: #0c9fdd;\n  font-size: 2rem;\n  width: 4rem;\n  height: 4rem;\n  justify-content: center;\n  align-items: center;\n  border-radius: 100%; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\ninput {\n  width: 100%; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.paginator {\n  display: flex;\n  align-items: center;\n  justify-content: center; }\n  .paginator > ul {\n    margin: 0;\n    padding: 0; }\n  .paginator__indicator {\n    display: inline-block;\n    background: #999999;\n    width: 8px;\n    height: 8px;\n    border-radius: 50%;\n    margin: 0 .2rem;\n    transition: background 0.5s ease; }\n    .paginator__indicator.active {\n      background: #555555;\n      transition: background 0.5s ease;\n      vertical-align: -1px;\n      width: 10px;\n      height: 10px; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.pulse {\n  display: inline-block;\n  margin-right: .5rem;\n  margin-bottom: .25rem;\n  width: 9px;\n  height: 9px;\n  border-radius: 50%;\n  animation: pulse 2s infinite;\n  cursor: pointer; }\n  .pulse.blue {\n    background: #0c9fdd;\n    box-shadow: 0 0 0 rgba(12, 159, 221, 0.4); }\n  .pulse.green {\n    background: #0bb550;\n    box-shadow: 0 0 0 rgba(11, 181, 80, 0.4); }\n  .pulse.purple {\n    background: #604B9C;\n    box-shadow: 0 0 0 rgba(96, 75, 156, 0.4); }\n  .pulse.red {\n    background: #EB624B;\n    box-shadow: 0 0 0 rgba(235, 98, 75, 0.4); }\n\n.pulse:hover {\n  animation: none; }\n\n@-webkit-keyframes pulse {\n  0% {\n    -webkit-box-shadow: 0 0 0 0 inherit; }\n  70% {\n    -webkit-box-shadow: 0 0 0 7px transparent; }\n  100% {\n    -webkit-box-shadow: 0 0 0 0 transparent; } }\n\n@keyframes pulse {\n  0% {\n    -moz-box-shadow: 0 0 0 0 inherit;\n    box-shadow: 0 0 0 0 inherit; }\n  70% {\n    -moz-box-shadow: 0 0 0 7px transparent;\n    box-shadow: 0 0 0 7px transparent; }\n  100% {\n    -moz-box-shadow: 0 0 0 0 transparent;\n    box-shadow: 0 0 0 0 transparent; } }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.refreshButton {\n  position: absolute;\n  align-items: center;\n  justify-content: center;\n  width: 4rem;\n  height: 4rem;\n  color: white;\n  font-size: 1.2rem;\n  border-radius: 50%;\n  background: #555555;\n  position: fixed;\n  bottom: 2rem;\n  right: 1rem;\n  box-shadow: 0 3px 3px rgba(10, 10, 10, 0.3); }\n\n.spinner {\n  color: #0c9fdd;\n  text-indent: -9999em;\n  overflow: hidden;\n  width: 1em;\n  height: 1em;\n  border-radius: 50%;\n  position: relative;\n  -webkit-transform: translateZ(0);\n  -ms-transform: translateZ(0);\n  transform: translateZ(0);\n  -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;\n  animation: load6 1.7s infinite ease, round 1.7s infinite ease; }\n\n@-webkit-keyframes load6 {\n  0% {\n    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; }\n  5%,\n  95% {\n    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; }\n  10%,\n  59% {\n    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em; }\n  20% {\n    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em; }\n  38% {\n    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em; }\n  100% {\n    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; } }\n\n@keyframes load6 {\n  0% {\n    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; }\n  5%,\n  95% {\n    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; }\n  10%,\n  59% {\n    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em; }\n  20% {\n    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em; }\n  38% {\n    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em; }\n  100% {\n    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; } }\n\n@-webkit-keyframes round {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg); }\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n@keyframes round {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg); }\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.homeContent {\n  overflow-y: scroll;\n  margin-top: 52.59px;\n  height: calc(100% - 52.59px); }\n  .homeContent__label {\n    color: #555555;\n    margin-left: 1rem;\n    font-size: 1rem;\n    font-weight: bold; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.infoContent {\n  padding-top: 5rem; }\n  .infoContent .infoContent__description {\n    font-size: .5rem;\n    color: #777777; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.mainContent {\n  overflow-y: scroll;\n  margin-top: 52.59px;\n  height: calc(100% - 52.59px); }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.sidebarContent {\n  background: white;\n  width: 280px;\n  min-height: 100%;\n  padding-top: 54px; }\n  .sidebarContent .topBanner {\n    position: absolute;\n    background: white;\n    font-weight: 800;\n    top: 0px;\n    width: 100%;\n    padding: 1.2rem;\n    z-index: 1;\n    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2); }\n  .sidebarContent .header {\n    margin: 0px inherit;\n    padding: 10px;\n    padding-left: 12px;\n    font-size: 1.1rem;\n    font-weight: bold; }\n  .sidebarContent .itemList {\n    list-style: none;\n    padding: 0px; }\n    .sidebarContent .itemList .item {\n      font-size: 1rem;\n      padding: 12px;\n      transition: 0.2s;\n      cursor: pointer; }\n      .sidebarContent .itemList .item:hover {\n        background: #EEEEEE;\n        transition: 0.2s; }\n      .sidebarContent .itemList .item.active {\n        background: #f3f3f3;\n        color: #0c9fdd; }\n      .sidebarContent .itemList .item .xi-x {\n        margin-right: 15px; }\n  .sidebarContent hr {\n    margin: 1rem; }\n  .sidebarContent__bottom {\n    position: absolute;\n    bottom: 20px; }\n    .sidebarContent__bottom ul .item {\n      font-size: 1.1rem;\n      font-weight: bold; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n* {\n  margin: auto 0;\n  font-family: 'NanumSquare', sans-serif;\n  -webkit-touch-callout: none;\n  /* iOS Safari */\n  -webkit-user-select: none;\n  /* Safari */\n  -khtml-user-select: none;\n  /* Konqueror HTML */\n  -moz-user-select: none;\n  /* Firefox */\n  -ms-user-select: none;\n  /* Internet Explorer/Edge */\n  user-select: none;\n  /* Non-prefixed version, currently\n                                  supported by Chrome and Opera */ }\n\nhtml {\n  height: 100%;\n  overflow: hidden; }\n\nbody {\n  height: 100%;\n  overflow: auto; }\n\nhtml,\nbody {\n  margin: 0 0;\n  overflow-y: scroll;\n  -webkit-overflow-scrolling: touch; }\n\nbody {\n  background: #F2F2F2;\n  color: #333333; }\n\na {\n  text-decoration: none;\n  color: inherit; }\n  a:visited {\n    color: inherit; }\n\n.clear:after {\n  display: block;\n  clear: both;\n  content: \" \"; }\n\n.left {\n  float: left; }\n\n.right {\n  float: right; }\n\n.text-center {\n  text-align: center; }\n\n.flex {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center; }\n  .flex .item {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    flex-grow: 1; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.mainPage {\n  position: relative;\n  overflow-y: scroll;\n  height: 100%;\n  max-height: 100%;\n  -webkit-overflow-scrolling: touch; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n", ""]);
+	exports.push([module.id, "/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n\n.ActionBar {\n  position: absolute;\n  top: 0;\n  color: #333333;\n  background: white;\n  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);\n  border-bottom-left-radius: .5rem;\n  border-bottom-right-radius: .5rem;\n  width: 100%;\n  padding: 1.2rem 1rem;\n  margin-bottom: .5rem;\n  text-align: center;\n  z-index: 1; }\n  .ActionBar .xi-bars {\n    padding-top: 2.5px;\n    margin-right: 2rem;\n    float: left; }\n  .ActionBar .title {\n    margin-left: -3rem;\n    font-weight: 600;\n    font-size: 1.1rem; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.busBar {\n  background: white;\n  color: #333333;\n  margin: 8rem 20px;\n  margin-bottom: 6rem;\n  border-top: 1px solid black; }\n  .busBar .bus {\n    box-sizing: border-box;\n    position: relative;\n    display: inline-block;\n    font-size: 1.5rem; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.card {\n  display: flex;\n  background: white;\n  padding: 1.25rem;\n  margin: 1rem;\n  border-radius: 4.5px;\n  box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 2px 0px; }\n  .card:hover {\n    color: inherit; }\n  .card > .content {\n    display: block;\n    width: 100%; }\n  .card .busBarCard {\n    background: white;\n    padding: 20px; }\n    .card .busBarCard .bus {\n      box-sizing: border-box;\n      position: relative;\n      display: inline-block;\n      width: 24px;\n      height: 24px;\n      background: black;\n      border-radius: 100%; }\n\n.ripple {\n  position: relative;\n  overflow: hidden;\n  transform: translate3d(0, 0, 0); }\n  .ripple:after {\n    content: \"\";\n    display: block;\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    top: 0;\n    left: 0;\n    pointer-events: none;\n    background-image: radial-gradient(circle, #000 10%, transparent 10.01%);\n    background-repeat: no-repeat;\n    background-position: 50%;\n    transform: scale(10, 10);\n    opacity: 0;\n    transition: transform .3s, opacity .3s; }\n  .ripple:active:after {\n    transform: scale(0, 0);\n    opacity: .2;\n    transition: 0s; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.busCard .content {\n  display: flex; }\n  .busCard .content .icon-wrapper {\n    float: left;\n    margin-right: 2.5rem;\n    text-align: center; }\n    .busCard .content .icon-wrapper .icon {\n      color: #0c9fdd;\n      font-size: 2rem;\n      margin-bottom: .5rem; }\n    .busCard .content .icon-wrapper .label {\n      font-weight: bold; }\n  .busCard .content .description {\n    padding-top: 0.4rem;\n    align-items: center;\n    justify-content: center; }\n    .busCard .content .description .timer {\n      font-weight: bold;\n      font-size: 1.5rem;\n      margin-bottom: .25rem; }\n      .busCard .content .description .timer-description {\n        font-size: .75rem;\n        color: #777777; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.mainCard {\n  margin: auto;\n  margin-top: -1rem;\n  margin-bottom: 1rem;\n  border-bottom-left-radius: 6px;\n  border-bottom-right-radius: 6px; }\n  .mainCard__content {\n    padding-top: 1.5rem; }\n    .mainCard__content__header .timetableInfo {\n      float: right;\n      font-weight: 600; }\n    .mainCard__content__header .icon-wrapper {\n      color: #0c9fdd;\n      display: inline-block;\n      font-size: 1.1rem;\n      margin-bottom: .5rem; }\n    .mainCard__content__body .timer {\n      font-size: 2.25rem;\n      font-weight: 800;\n      margin: 1rem auto;\n      color: #333333; }\n      .mainCard__content__body .timer-description {\n        color: #777777; }\n    .mainCard__content__body__noBus {\n      margin-top: 1rem;\n      font-size: 5rem;\n      text-align: center;\n      color: #777777; }\n      .mainCard__content__body__noBus-description {\n        font-size: 1.2rem;\n        font-weight: bold;\n        margin-top: 1rem; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.noBusCard {\n  border-left: 3.5px solid #EB624B; }\n  .noBusCard .content > .icon {\n    color: #EB624B;\n    vertical-align: -2px;\n    font-size: 1.2rem; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.noticeCard {\n  margin: auto;\n  margin-top: -1rem;\n  margin-bottom: 1rem;\n  border-bottom-left-radius: 6px;\n  border-bottom-right-radius: 6px; }\n  .noticeCard > .content {\n    padding-top: 1.5rem; }\n    .noticeCard > .content .cardHeader {\n      font-size: 1.2rem;\n      font-weight: bold;\n      margin-bottom: 1rem; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.PedalroCard__loading {\n  font-size: 1.25rem; }\n  .PedalroCard__loading .spinner {\n    margin-right: 1rem;\n    margin-left: 1rem; }\n\n.PedalroCard__content__cardHeader {\n  margin-bottom: 1rem; }\n  .PedalroCard__content__cardHeader .label {\n    color: #0bb550;\n    font-size: 1.2rem;\n    font-weight: bold; }\n  .PedalroCard__content__cardHeader-description {\n    word-break: keep-all;\n    margin-top: .25rem;\n    font-size: .875rem;\n    color: #777777; }\n  .PedalroCard__content__cardHeader__updateTime {\n    font-size: .75rem;\n    color: #BBBBBB; }\n\n.PedalroCard__content__cardBody .label {\n  font-weight: bold; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.simpleBusCard .content {\n  display: flex; }\n  .simpleBusCard .content .icon-wrapper {\n    float: left;\n    margin-right: 2.5rem;\n    text-align: center; }\n    .simpleBusCard .content .icon-wrapper .icon {\n      color: #0c9fdd;\n      font-size: 2rem;\n      margin-bottom: .5rem; }\n    .simpleBusCard .content .icon-wrapper .label {\n      font-weight: bold; }\n  .simpleBusCard .content .description {\n    padding-top: 0.4rem;\n    align-items: center;\n    justify-content: center; }\n    .simpleBusCard .content .description .timer {\n      font-weight: bold;\n      font-size: 1.5rem;\n      margin-bottom: .25rem; }\n      .simpleBusCard .content .description .timer-description {\n        font-size: .75rem;\n        color: #777777; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.circle {\n  display: flex;\n  color: #0c9fdd;\n  font-size: 2rem;\n  width: 4rem;\n  height: 4rem;\n  justify-content: center;\n  align-items: center;\n  border-radius: 100%; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\ninput {\n  width: 100%; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.paginator {\n  display: flex;\n  align-items: center;\n  justify-content: center; }\n  .paginator > ul {\n    margin: 0;\n    padding: 0; }\n  .paginator__indicator {\n    display: inline-block;\n    background: #999999;\n    width: 8px;\n    height: 8px;\n    border-radius: 50%;\n    margin: 0 .2rem;\n    transition: background 0.5s ease; }\n    .paginator__indicator.active {\n      background: #555555;\n      transition: background 0.5s ease;\n      vertical-align: -1px;\n      width: 10px;\n      height: 10px; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.pulse {\n  display: inline-block;\n  margin-right: .5rem;\n  margin-bottom: .25rem;\n  width: 9px;\n  height: 9px;\n  border-radius: 50%;\n  animation: pulse 2s infinite;\n  cursor: pointer; }\n  .pulse.blue {\n    background: #0c9fdd;\n    box-shadow: 0 0 0 rgba(12, 159, 221, 0.4); }\n  .pulse.green {\n    background: #0bb550;\n    box-shadow: 0 0 0 rgba(11, 181, 80, 0.4); }\n  .pulse.purple {\n    background: #604B9C;\n    box-shadow: 0 0 0 rgba(96, 75, 156, 0.4); }\n  .pulse.red {\n    background: #EB624B;\n    box-shadow: 0 0 0 rgba(235, 98, 75, 0.4); }\n\n.pulse:hover {\n  animation: none; }\n\n@-webkit-keyframes pulse {\n  0% {\n    -webkit-box-shadow: 0 0 0 0 inherit; }\n  70% {\n    -webkit-box-shadow: 0 0 0 7px transparent; }\n  100% {\n    -webkit-box-shadow: 0 0 0 0 transparent; } }\n\n@keyframes pulse {\n  0% {\n    -moz-box-shadow: 0 0 0 0 inherit;\n    box-shadow: 0 0 0 0 inherit; }\n  70% {\n    -moz-box-shadow: 0 0 0 7px transparent;\n    box-shadow: 0 0 0 7px transparent; }\n  100% {\n    -moz-box-shadow: 0 0 0 0 transparent;\n    box-shadow: 0 0 0 0 transparent; } }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.refreshButton {\n  position: absolute;\n  align-items: center;\n  justify-content: center;\n  width: 4rem;\n  height: 4rem;\n  color: white;\n  font-size: 1.2rem;\n  border-radius: 50%;\n  background: #555555;\n  position: fixed;\n  bottom: 2rem;\n  right: 1rem;\n  box-shadow: 0 3px 3px rgba(10, 10, 10, 0.3); }\n\n.spinner {\n  color: #0c9fdd;\n  text-indent: -9999em;\n  overflow: hidden;\n  width: 1em;\n  height: 1em;\n  border-radius: 50%;\n  position: relative;\n  -webkit-transform: translateZ(0);\n  -ms-transform: translateZ(0);\n  transform: translateZ(0);\n  -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;\n  animation: load6 1.7s infinite ease, round 1.7s infinite ease; }\n\n@-webkit-keyframes load6 {\n  0% {\n    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; }\n  5%,\n  95% {\n    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; }\n  10%,\n  59% {\n    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em; }\n  20% {\n    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em; }\n  38% {\n    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em; }\n  100% {\n    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; } }\n\n@keyframes load6 {\n  0% {\n    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; }\n  5%,\n  95% {\n    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; }\n  10%,\n  59% {\n    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em; }\n  20% {\n    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em; }\n  38% {\n    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em; }\n  100% {\n    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; } }\n\n@-webkit-keyframes round {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg); }\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n@keyframes round {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg); }\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.homeContent {\n  overflow-y: scroll;\n  margin-top: 52.59px;\n  height: calc(100% - 52.59px); }\n  .homeContent__label {\n    color: #555555;\n    margin-left: 1rem;\n    font-size: 1rem;\n    font-weight: bold; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.infoContent {\n  padding-top: 5rem; }\n  .infoContent__description {\n    font-size: .75rem;\n    color: #777777; }\n  .infoContent__contact__header {\n    font-size: 1.25rem; }\n  .infoContent__contact__body {\n    margin-top: 1rem; }\n  .infoContent__staff__header {\n    font-size: 1.25rem; }\n  .infoContent__staff__body {\n    margin-top: 1rem; }\n    .infoContent__staff__body > ul {\n      list-style: none;\n      padding-left: 0; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.mainContent {\n  overflow-y: scroll;\n  margin-top: 52.59px;\n  height: calc(100% - 52.59px); }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.sidebarContent {\n  background: white;\n  width: 280px;\n  min-height: 100%;\n  padding-top: 54px; }\n  .sidebarContent .topBanner {\n    position: absolute;\n    background: white;\n    font-weight: 800;\n    top: 0px;\n    width: 100%;\n    padding: 1.2rem;\n    z-index: 1;\n    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2); }\n  .sidebarContent .header {\n    margin: 0px inherit;\n    padding: 10px;\n    padding-left: 12px;\n    font-size: 1.1rem;\n    font-weight: bold; }\n  .sidebarContent .itemList {\n    list-style: none;\n    padding: 0px; }\n    .sidebarContent .itemList .item {\n      font-size: 1rem;\n      padding: 12px;\n      transition: 0.2s;\n      cursor: pointer; }\n      .sidebarContent .itemList .item:hover {\n        background: #EEEEEE;\n        transition: 0.2s; }\n      .sidebarContent .itemList .item.active {\n        background: #f3f3f3;\n        color: #0c9fdd; }\n      .sidebarContent .itemList .item .xi-x {\n        margin-right: 15px; }\n  .sidebarContent hr {\n    margin: 1rem; }\n  .sidebarContent__bottom {\n    position: absolute;\n    bottom: 20px; }\n    .sidebarContent__bottom ul .item {\n      font-size: 1.1rem;\n      font-weight: bold; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n* {\n  margin: auto 0;\n  font-family: 'NanumSquare', sans-serif;\n  -webkit-touch-callout: none;\n  /* iOS Safari */\n  -webkit-user-select: none;\n  /* Safari */\n  -khtml-user-select: none;\n  /* Konqueror HTML */\n  -moz-user-select: none;\n  /* Firefox */\n  -ms-user-select: none;\n  /* Internet Explorer/Edge */\n  user-select: none;\n  /* Non-prefixed version, currently\n                                  supported by Chrome and Opera */ }\n\nhtml {\n  height: 100%;\n  overflow: hidden; }\n\nbody {\n  height: 100%;\n  overflow: auto; }\n\nhtml,\nbody {\n  margin: 0 0;\n  overflow-y: scroll;\n  -webkit-overflow-scrolling: touch; }\n\nbody {\n  background: #F2F2F2;\n  color: #333333; }\n\na {\n  text-decoration: none;\n  color: inherit; }\n  a:visited {\n    color: inherit; }\n\n.clear:after {\n  display: block;\n  clear: both;\n  content: \" \"; }\n\n.left {\n  float: left; }\n\n.right {\n  float: right; }\n\n.text-center {\n  text-align: center; }\n\n.flex {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center; }\n  .flex .item {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    flex-grow: 1; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n.mainPage {\n  position: relative;\n  overflow-y: scroll;\n  height: 100%;\n  max-height: 100%;\n  -webkit-overflow-scrolling: touch; }\n\n/*\n* Author: @nayunhwan (github.com/nayunhwan)\n* Email: nayunhwan.dev@mgail.com\n*/\n", ""]);
 
 /***/ }),
 /* 232 */
@@ -31144,7 +31144,6 @@
 		}, {
 			key: 'fetchPedalro',
 			value: function fetchPedalro() {
-				console.log('fetch');
 				this.props.dispatch(PedalroActionCreator.getPedalro());
 			}
 		}, {
@@ -88101,7 +88100,12 @@
 						className: (0, _bind2.default)('card', className, { ripple: this.props.ripple }),
 						style: style
 					},
-					content
+					_react2.default.createElement(
+						'div',
+						{ className: 'content' },
+						content,
+						this.props.children
+					)
 				);
 			}
 		}]);
@@ -88199,23 +88203,40 @@
 				if (!latestBus) {
 					return _react2.default.createElement(
 						'div',
-						{ className: 'content' },
+						{ className: 'mainCard__content' },
 						_react2.default.createElement(
 							'div',
-							{ className: 'timetableInfo clear' },
-							'2017\uB144 2\uD559\uAE30 \uD3C9\uC77C \uC2DC\uAC04\uD45C'
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 'icon-wrapper', style: { color: C.Colors.redColor } },
-							_react2.default.createElement('i', { className: 'icon xi-close-circle-o' }),
+							{ className: 'mainCard__content__header' },
 							_react2.default.createElement(
-								'span',
-								{ className: 'label' },
-								'\uC6B4\uD589\uC885\uB8CC'
+								'div',
+								{ className: 'timetableInfo clear' },
+								'2017\uB144 2\uD559\uAE30 \uD3C9\uC77C \uC2DC\uAC04\uD45C'
+							),
+							_react2.default.createElement(
+								'div',
+								{ className: 'icon-wrapper', style: { color: C.Colors.redColor } },
+								_react2.default.createElement('i', { className: 'icon xi-close-circle-o' }),
+								_react2.default.createElement(
+									'span',
+									{ className: 'label' },
+									'\uC6B4\uD589\uC885\uB8CC'
+								)
 							)
 						),
-						_react2.default.createElement('div', { className: 'description' })
+						_react2.default.createElement(
+							'div',
+							{ className: 'mainCard__content__body' },
+							_react2.default.createElement(
+								'div',
+								{ className: 'mainCard__content__body__noBus' },
+								_react2.default.createElement('i', { className: 'icon xi-bus' }),
+								_react2.default.createElement(
+									'div',
+									{ className: 'mainCard__content__body__noBus-description' },
+									'\uBC84\uC2A4 \uC815\uBCF4\uAC00 \uC5C6\uC2B5\uB2C8\uB2E4.'
+								)
+							)
+						)
 					);
 				}
 
@@ -88241,25 +88262,29 @@
 
 				return _react2.default.createElement(
 					'div',
-					{ className: 'content' },
+					{ className: 'mainCard__content' },
 					_react2.default.createElement(
 						'div',
-						{ className: 'timetableInfo clear' },
-						'2017\uB144 2\uD559\uAE30 \uD3C9\uC77C \uC2DC\uAC04\uD45C'
-					),
-					_react2.default.createElement(
-						'div',
-						{ className: 'icon-wrapper', style: { color: color } },
-						_react2.default.createElement('i', { className: iconClass }),
+						{ className: 'mainCard__content__header' },
 						_react2.default.createElement(
-							'span',
-							{ className: 'label' },
-							label
+							'div',
+							{ className: 'timetableInfo clear' },
+							'2017\uB144 2\uD559\uAE30 \uD3C9\uC77C \uC2DC\uAC04\uD45C'
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'icon-wrapper', style: { color: color } },
+							_react2.default.createElement('i', { className: iconClass }),
+							_react2.default.createElement(
+								'span',
+								{ className: 'label' },
+								label
+							)
 						)
 					),
 					_react2.default.createElement(
 						'div',
-						{ className: 'description' },
+						{ className: 'mainCard__content__body' },
 						_react2.default.createElement(
 							'div',
 							{ className: 'timer' },
@@ -88280,10 +88305,11 @@
 		}, {
 			key: 'render',
 			value: function render() {
-				return _react2.default.createElement(_Components.Card, {
-					className: 'mainCard',
-					content: this.renderContent()
-				});
+				return _react2.default.createElement(
+					_Components.Card,
+					{ className: 'mainCard' },
+					this.renderContent()
+				);
 			}
 		}]);
 
@@ -88349,7 +88375,11 @@
 		}, {
 			key: 'render',
 			value: function render() {
-				return _react2.default.createElement(_Components.Card, { className: 'noBusCard', content: this.renderContent() });
+				return _react2.default.createElement(
+					_Components.Card,
+					{ className: 'noBusCard' },
+					this.renderContent()
+				);
 			}
 		}]);
 
@@ -88431,7 +88461,11 @@
 		}, {
 			key: 'render',
 			value: function render() {
-				return _react2.default.createElement(_Components.Card, { className: 'noticeCard', content: this.renderContent() });
+				return _react2.default.createElement(
+					_Components.Card,
+					{ className: 'noticeCard' },
+					this.renderContent()
+				);
 			}
 		}]);
 
@@ -88525,17 +88559,17 @@
 				if (this.state.isLoading) {
 					return _react2.default.createElement(
 						'div',
-						{ className: 'loading' },
+						{ className: 'PedalroCard__loading' },
 						_react2.default.createElement(_Components.Spinner, { size: '1.25rem', display: 'inline-block' }),
 						' Loading...'
 					);
 				}
 				return _react2.default.createElement(
 					'div',
-					{ className: 'content' },
+					{ className: 'PedalroCard__content' },
 					_react2.default.createElement(
 						'div',
-						{ className: 'cardHeader' },
+						{ className: 'PedalroCard__content__cardHeader' },
 						_react2.default.createElement(
 							'div',
 							{ className: 'clear' },
@@ -88551,7 +88585,7 @@
 							),
 							_react2.default.createElement(
 								'div',
-								{ className: 'right cardHeader__updateTime' },
+								{ className: 'right PedalroCard__content__cardHeader__updateTime' },
 								_react2.default.createElement('i', { className: 'xi-renew' }),
 								'\xA0',
 								this.state.now.format('HH:mm:ss'),
@@ -88560,13 +88594,13 @@
 						),
 						_react2.default.createElement(
 							'div',
-							{ className: 'cardHeader-description' },
+							{ className: 'PedalroCard__content__cardHeader-description' },
 							'\uD559\uAD50 \uC778\uADFC\uC758 \uD398\uB2EC\uB85C \uC815\uB958\uC7A5\uC5D0 \uB300\uD55C \uC815\uBCF4\uB97C \uC54C \uC218 \uC788\uC2B5\uB2C8\uB2E4.'
 						)
 					),
 					_react2.default.createElement(
 						'div',
-						{ className: 'cardBody' },
+						{ className: 'PedalroCard__content__cardBody' },
 						_react2.default.createElement(
 							'div',
 							{ className: 'left text-center' },
@@ -88605,14 +88639,17 @@
 			value: function render() {
 				var _this2 = this;
 
-				return _react2.default.createElement(_Components.Card, {
-					className: 'PedalroCard',
-					ripple: this.props.ripple,
-					content: this.renderContent(),
-					onClick: function onClick() {
-						return _this2.refresh();
-					}
-				});
+				return _react2.default.createElement(
+					_Components.Card,
+					{
+						className: 'PedalroCard',
+						ripple: this.props.ripple,
+						onClick: function onClick() {
+							return _this2.refresh();
+						}
+					},
+					this.renderContent()
+				);
 			}
 		}]);
 
@@ -89871,6 +89908,12 @@
 
 	var _Components = __webpack_require__(291);
 
+	var _Constants = __webpack_require__(953);
+
+	var C = _interopRequireWildcard(_Constants);
+
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -89914,8 +89957,6 @@
 						_react2.default.createElement('br', null),
 						'\uB300\uD45C: \uB098\uC724\uD658',
 						_react2.default.createElement('br', null),
-						'\uAC1C\uBC1C\uC9C4: \uC2E0\uD604\uC885, \uC724\uC9C0\uC6B0, \uC774\uC815\uD604 | \uB514\uC790\uC774\uB108: \uAC15\uC9C4\uC8FC',
-						_react2.default.createElement('br', null),
 						'\uC8FC\uC18C: \uACBD\uAE30\uB3C4 \uC548\uC0B0\uC2DC \uC0C1\uB85D\uAD6C \uD55C\uC591\uB300\uD559\uB85C 55 \uCC3D\uC5C5\uBCF4\uC721\uC13C\uD130 2\uCE35 Knowledge Lab',
 						_react2.default.createElement('br', null),
 						'http://exitsoft.kr',
@@ -89926,7 +89967,68 @@
 				return _react2.default.createElement(
 					'div',
 					{ className: 'infoContent' },
-					_react2.default.createElement(_Components.Card, { content: content })
+					_react2.default.createElement(
+						_Components.Card,
+						null,
+						content
+					),
+					_react2.default.createElement(
+						_Components.Card,
+						{ className: 'infoContent__contact' },
+						_react2.default.createElement(
+							'div',
+							{ className: 'infoContent__contact__header' },
+							C.TitleWithIcon.contact
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'infoContent__contact__body' },
+							'\uC81C\uD734\uC5D0 \uB300\uD55C \uBB38\uC758\uB294 exitsoft.official@gmail.com\uC73C\uB85C \uBD80\uD0C1\uB4DC\uB9BD\uB2C8\uB2E4.'
+						)
+					),
+					_react2.default.createElement(
+						_Components.Card,
+						{ className: 'infoContent__staff' },
+						_react2.default.createElement(
+							'div',
+							{ className: 'infoContent__staff__header' },
+							_react2.default.createElement('i', { className: 'xi-wrench' }),
+							' \uAC1C\uBC1C\uC9C4'
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'infoContent__staff__body' },
+							_react2.default.createElement(
+								'ul',
+								null,
+								_react2.default.createElement(
+									'li',
+									null,
+									'\uB098\uC724\uD658 | \uCEF4\uD4E8\uD130\uACF5\uD559 14, Front-end Developer'
+								),
+								_react2.default.createElement(
+									'li',
+									null,
+									'\uAC15\uC9C4\uC8FC | \uCEE4\uBBA4\uB2C8\uCF00\uC774\uC158\uB514\uC790\uC778 15, Designer'
+								),
+								_react2.default.createElement(
+									'li',
+									null,
+									'\uC2E0\uD604\uC885 | \uCEF4\uD4E8\uD130\uACF5\uD559 14, Front-end Developer'
+								),
+								_react2.default.createElement(
+									'li',
+									null,
+									'\uC724\uC9C0\uC6B0 | \uCEF4\uD4E8\uD130\uACF5\uD559 14, Back-end Developer'
+								),
+								_react2.default.createElement(
+									'li',
+									null,
+									'\uC774\uC815\uD604 | \uCEF4\uD4E8\uD130\uACF5\uD559 14, Back-end Developer'
+								)
+							)
+						)
+					)
 				);
 			}
 		}]);
@@ -90307,16 +90409,6 @@
 					_react2.default.createElement(
 						'ul',
 						{ className: 'itemList' },
-						_react2.default.createElement(
-							'li',
-							{ className: (0, _bind2.default)('item', { active: selected === 'contact' }) },
-							C.TitleWithIcon.contact
-						),
-						_react2.default.createElement(
-							'li',
-							{ className: (0, _bind2.default)('item', { active: selected === 'help' }) },
-							C.TitleWithIcon.help
-						),
 						_react2.default.createElement(
 							_reactRouter.Link,
 							{ to: '/info', onClick: function onClick() {
