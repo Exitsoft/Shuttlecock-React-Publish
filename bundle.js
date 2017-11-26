@@ -88199,6 +88199,11 @@
 				var type = this.props.type;
 				var latestBus = this.props.latestBus;
 
+				var date = new Date();
+				var d = date.getDay();
+
+				var day = '';
+				if (d == 0) day = '일요일';else if (1 <= d && d <= 5) day = '평일';else if (d == 6) day = '토요일';
 
 				if (!latestBus) {
 					return _react2.default.createElement(
@@ -88210,7 +88215,9 @@
 							_react2.default.createElement(
 								'div',
 								{ className: 'timetableInfo clear' },
-								'2017\uB144 2\uD559\uAE30 \uD3C9\uC77C \uC2DC\uAC04\uD45C'
+								'2017\uB144 2\uD559\uAE30 ',
+								day,
+								' \uC2DC\uAC04\uD45C'
 							),
 							_react2.default.createElement(
 								'div',
@@ -88269,7 +88276,9 @@
 						_react2.default.createElement(
 							'div',
 							{ className: 'timetableInfo clear' },
-							'2017\uB144 2\uD559\uAE30 \uD3C9\uC77C \uC2DC\uAC04\uD45C'
+							'2017\uB144 2\uD559\uAE30 ',
+							day,
+							' \uC2DC\uAC04\uD45C'
 						),
 						_react2.default.createElement(
 							'div',
