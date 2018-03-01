@@ -39901,7 +39901,7 @@
 	  _createClass(MainPage, [{
 	    key: "componentDidMount",
 	    value: function componentDidMount() {
-	      this.props.dispatch(TimeActionCreator.getTimetable("vacation"));
+	      this.props.dispatch(TimeActionCreator.getTimetable("semester"));
 	      this.props.dispatch(PedalroActionCreator.getPedalro());
 	    }
 	  }, {
@@ -39961,7 +39961,10 @@
 	      return _react2.default.createElement(
 	        _reactSidebar2.default,
 	        {
-	          sidebar: _react2.default.createElement(_Contents.SidebarContent, { selected: selected, itemClick: this.onSetSidebarOpen }),
+	          sidebar: _react2.default.createElement(_Contents.SidebarContent, {
+	            selected: selected,
+	            itemClick: this.onSetSidebarOpen
+	          }),
 	          open: this.state.sidebarOpen,
 	          onSetOpen: this.onSetSidebarOpen,
 	          shadow: false,
@@ -39977,10 +39980,7 @@
 	        _react2.default.createElement(
 	          "div",
 	          { className: "mainPage" },
-	          _react2.default.createElement(_Components.ActionBar, {
-	            title: title,
-	            menuBtnClick: this.onSetSidebarOpen
-	          }),
+	          _react2.default.createElement(_Components.ActionBar, { title: title, menuBtnClick: this.onSetSidebarOpen }),
 	          this.renderContent()
 	        )
 	      );
@@ -97733,7 +97733,7 @@
 	            _react2.default.createElement(
 	              "div",
 	              { className: "timetableInfo clear" },
-	              "2018\uB144 \uACC4\uC808\uD559\uAE30 ",
+	              "2018\uB144 1\uD559\uAE30 ",
 	              day,
 	              " \uC2DC\uAC04\uD45C"
 	            ),
@@ -97794,7 +97794,7 @@
 	          _react2.default.createElement(
 	            "div",
 	            { className: "timetableInfo clear" },
-	            "2018\uB144 \uACC4\uC808\uD559\uAE30 ",
+	            "2018\uB144 1\uD559\uAE30 ",
 	            day,
 	            " \uC2DC\uAC04\uD45C"
 	          ),
@@ -98649,7 +98649,7 @@
 	      return _react2.default.createElement(
 	        "div",
 	        { className: "homeContent" },
-	        _react2.default.createElement(_Components.NoticeCard, { text: "\uC2DC\uAC04\uD45C\uAC00 \uACA8\uC6B8 \uACC4\uC808\uD559\uAE30\uB97C \uB9DE\uC774\uD558\uC5EC \uC0C8\uB86D\uAC8C \uBCC0\uACBD\uB418\uC5C8\uC2B5\uB2C8\uB2E4." }),
+	        _react2.default.createElement(_Components.NoticeCard, { text: "\uC2DC\uAC04\uD45C\uAC00 2018\uB144\uB3C4 \uC2E0\uD559\uAE30\uB97C \uB9DE\uC774\uD558\uC5EC \uC0C8\uB86D\uAC8C \uBCC0\uACBD\uB418\uC5C8\uC2B5\uB2C8\uB2E4." }),
 	        _react2.default.createElement(
 	          "a",
 	          { href: "https://apply.likelion.org" },
@@ -98674,10 +98674,7 @@
 	          swipeItems.map(function (item, i) {
 	            return _react2.default.createElement(
 	              "div",
-	              {
-	                key: "swipe-items-" + i,
-	                className: "swipeWrapper"
-	              },
+	              { key: "swipe-items-" + i, className: "swipeWrapper" },
 	              item
 	            );
 	          })
