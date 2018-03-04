@@ -34591,7 +34591,7 @@
 	
 	var _Pages = __webpack_require__(616);
 	
-	var _favicon = __webpack_require__(1432);
+	var _favicon = __webpack_require__(1435);
 	
 	var _favicon2 = _interopRequireDefault(_favicon);
 	
@@ -39810,11 +39810,11 @@
 	
 	var _MainPage3 = _interopRequireDefault(_MainPage2);
 	
-	var _NoMatchPage2 = __webpack_require__(1430);
+	var _NoMatchPage2 = __webpack_require__(1433);
 	
 	var _NoMatchPage3 = _interopRequireDefault(_NoMatchPage2);
 	
-	var _TestPage2 = __webpack_require__(1431);
+	var _TestPage2 = __webpack_require__(1434);
 	
 	var _TestPage3 = _interopRequireDefault(_TestPage2);
 	
@@ -39850,7 +39850,7 @@
 	
 	var _Contents = __webpack_require__(1418);
 	
-	var _reactSidebar = __webpack_require__(1428);
+	var _reactSidebar = __webpack_require__(1431);
 	
 	var _reactSidebar2 = _interopRequireDefault(_reactSidebar);
 	
@@ -98361,19 +98361,19 @@
 	
 	var _HomeContent3 = _interopRequireDefault(_HomeContent2);
 	
-	var _InfoContent2 = __webpack_require__(1424);
+	var _InfoContent2 = __webpack_require__(1427);
 	
 	var _InfoContent3 = _interopRequireDefault(_InfoContent2);
 	
-	var _MainContent2 = __webpack_require__(1425);
+	var _MainContent2 = __webpack_require__(1428);
 	
 	var _MainContent3 = _interopRequireDefault(_MainContent2);
 	
-	var _ShuttleCardContent2 = __webpack_require__(1426);
+	var _ShuttleCardContent2 = __webpack_require__(1429);
 	
 	var _ShuttleCardContent3 = _interopRequireDefault(_ShuttleCardContent2);
 	
-	var _SidebarContent2 = __webpack_require__(1427);
+	var _SidebarContent2 = __webpack_require__(1430);
 	
 	var _SidebarContent3 = _interopRequireDefault(_SidebarContent2);
 	
@@ -98453,9 +98453,13 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _reactAdsense = __webpack_require__(1421);
+	
+	var _reactAdsense2 = _interopRequireDefault(_reactAdsense);
+	
 	var _reactRouter = __webpack_require__(562);
 	
-	var _reactSwipe = __webpack_require__(1421);
+	var _reactSwipe = __webpack_require__(1424);
 	
 	var _reactSwipe2 = _interopRequireDefault(_reactSwipe);
 	
@@ -98655,7 +98659,7 @@
 	          { href: "https://apply.likelion.org" },
 	          _react2.default.createElement(_Components.Card, {
 	            style: {
-	              backgroundImage: "url(" + __webpack_require__(1423) + ")",
+	              backgroundImage: "url(" + __webpack_require__(1426) + ")",
 	              backgroundSize: "cover",
 	              height: "100px",
 	              backgroundPosition: "-15px"
@@ -98680,7 +98684,8 @@
 	          })
 	        ),
 	        _react2.default.createElement(_Components.Paginator, { count: swipeItems.length, index: this.state.swipeIndex }),
-	        this.renderBuses()
+	        this.renderBuses(),
+	        _react2.default.createElement(_reactAdsense2.default.Google, { client: "ca-pub-8487204922259840", slot: "9088553939" })
 	      );
 	    }
 	  }]);
@@ -98703,6 +98708,156 @@
 	  value: true
 	});
 	
+	var _google = __webpack_require__(1422);
+	
+	var _google2 = _interopRequireDefault(_google);
+	
+	var _baidu = __webpack_require__(1423);
+	
+	var _baidu2 = _interopRequireDefault(_baidu);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var AdSense = {
+	  Google: _google2.default,
+	  Baidu: _baidu2.default
+	};
+	
+	exports.default = AdSense;
+
+/***/ }),
+/* 1422 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(328);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _propTypes = __webpack_require__(540);
+	
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Google = function (_React$Component) {
+	  _inherits(Google, _React$Component);
+	
+	  function Google() {
+	    _classCallCheck(this, Google);
+	
+	    return _possibleConstructorReturn(this, (Google.__proto__ || Object.getPrototypeOf(Google)).apply(this, arguments));
+	  }
+	
+	  _createClass(Google, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      if (window) (window.adsbygoogle = window.adsbygoogle || []).push({});
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement('ins', { className: this.props.className + ' adsbygoogle',
+	        style: this.props.style,
+	        'data-ad-client': this.props.client,
+	        'data-ad-slot': this.props.slot,
+	        'data-ad-format': this.props.format });
+	    }
+	  }]);
+	
+	  return Google;
+	}(_react2.default.Component);
+	
+	exports.default = Google;
+	;
+	
+	Google.propTypes = {
+	  className: _propTypes2.default.string,
+	  style: _propTypes2.default.object, // eslint-disable-line
+	  client: _propTypes2.default.string.isRequired,
+	  slot: _propTypes2.default.string.isRequired,
+	  format: _propTypes2.default.string
+	};
+	
+	Google.defaultProps = {
+	  className: '',
+	  style: { display: 'block' },
+	  format: 'auto'
+	};
+
+/***/ }),
+/* 1423 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(328);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Baidu = function (_React$Component) {
+	  _inherits(Baidu, _React$Component);
+	
+	  function Baidu() {
+	    _classCallCheck(this, Baidu);
+	
+	    return _possibleConstructorReturn(this, (Baidu.__proto__ || Object.getPrototypeOf(Baidu)).apply(this, arguments));
+	  }
+	
+	  _createClass(Baidu, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "adsbybaidu" },
+	        "TODO"
+	      );
+	    }
+	  }]);
+	
+	  return Baidu;
+	}(_react2.default.Component);
+	
+	exports.default = Baidu;
+	;
+
+/***/ }),
+/* 1424 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
 	var _propTypes = __webpack_require__(540);
@@ -98713,7 +98868,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _swipeJsIso = __webpack_require__(1422);
+	var _swipeJsIso = __webpack_require__(1425);
 	
 	var _swipeJsIso2 = _interopRequireDefault(_swipeJsIso);
 	
@@ -98879,7 +99034,7 @@
 
 
 /***/ }),
-/* 1422 */
+/* 1425 */
 /***/ (function(module, exports) {
 
 	/*
@@ -99450,13 +99605,13 @@
 
 
 /***/ }),
-/* 1423 */
+/* 1426 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "/public/imgs/likelion.jpg";
 
 /***/ }),
-/* 1424 */
+/* 1427 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -99604,7 +99759,7 @@
 	exports.default = InfoContent;
 
 /***/ }),
-/* 1425 */
+/* 1428 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -99765,7 +99920,7 @@
 	exports.default = MainContent;
 
 /***/ }),
-/* 1426 */
+/* 1429 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -99813,7 +99968,7 @@
 	exports.default = ShuttleCardContent;
 
 /***/ }),
-/* 1427 */
+/* 1430 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -99999,7 +100154,7 @@
 	exports.default = SidebarContent;
 
 /***/ }),
-/* 1428 */
+/* 1431 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -100008,7 +100163,7 @@
 	  value: true
 	});
 	
-	var _sidebar = __webpack_require__(1429);
+	var _sidebar = __webpack_require__(1432);
 	
 	var _sidebar2 = _interopRequireDefault(_sidebar);
 	
@@ -100017,7 +100172,7 @@
 	exports.default = _sidebar2.default;
 
 /***/ }),
-/* 1429 */
+/* 1432 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -100488,7 +100643,7 @@
 	exports.default = Sidebar;
 
 /***/ }),
-/* 1430 */
+/* 1433 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -100503,7 +100658,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactSidebar = __webpack_require__(1428);
+	var _reactSidebar = __webpack_require__(1431);
 	
 	var _reactSidebar2 = _interopRequireDefault(_reactSidebar);
 	
@@ -100570,7 +100725,7 @@
 	exports.default = NoMatchPage;
 
 /***/ }),
-/* 1431 */
+/* 1434 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -100585,7 +100740,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactSidebar = __webpack_require__(1428);
+	var _reactSidebar = __webpack_require__(1431);
 	
 	var _reactSidebar2 = _interopRequireDefault(_reactSidebar);
 	
@@ -100646,7 +100801,7 @@
 	exports.default = TestPage;
 
 /***/ }),
-/* 1432 */
+/* 1435 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "/public/icons/favicon.ico";
