@@ -98685,7 +98685,11 @@
 	        ),
 	        _react2.default.createElement(_Components.Paginator, { count: swipeItems.length, index: this.state.swipeIndex }),
 	        this.renderBuses(),
-	        _react2.default.createElement(_reactAdsense2.default.Google, { client: "ca-pub-8487204922259840", slot: "9088553939" })
+	        _react2.default.createElement(_reactAdsense2.default.Google, {
+	          style: { display: "inline-block", width: "320px", height: "100px" },
+	          client: "ca-pub-8487204922259840",
+	          slot: "9495694145"
+	        })
 	      );
 	    }
 	  }]);
