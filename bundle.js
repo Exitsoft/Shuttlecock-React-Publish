@@ -98518,6 +98518,7 @@
 	    value: function componentDidMount() {
 	      var _this2 = this;
 	
+	      (window.adsbygoogle || []).push({});
 	      var intervalId = setInterval(function () {
 	        _this2.setState({
 	          now: new _moment2.default(),
@@ -98685,11 +98686,20 @@
 	        ),
 	        _react2.default.createElement(_Components.Paginator, { count: swipeItems.length, index: this.state.swipeIndex }),
 	        this.renderBuses(),
-	        _react2.default.createElement(_reactAdsense2.default.Google, {
-	          style: { display: "inline-block", width: "320px", height: "100px" },
-	          client: "ca-pub-8487204922259840",
-	          slot: "9495694145"
-	        })
+	        _react2.default.createElement(
+	          "div",
+	          { className: "ad" },
+	          _react2.default.createElement("ins", {
+	            className: "adsbygoogle",
+	            style: {
+	              display: "inline-block",
+	              width: "320px",
+	              height: "100px"
+	            },
+	            "data-ad-client": "ca-pub-8487204922259840",
+	            "data-ad-slot": "9495694145"
+	          })
+	        )
 	      );
 	    }
 	  }]);
