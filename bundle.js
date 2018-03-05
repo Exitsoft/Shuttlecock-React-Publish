@@ -98518,7 +98518,11 @@
 	    value: function componentDidMount() {
 	      var _this2 = this;
 	
-	      (window.adsbygoogle || []).push({});
+	      (window.adsbygoogle || []).push({
+	        google_ad_client: "ca-pub-9925518422793214",
+	        enable_page_level_ads: true
+	      });
+	
 	      var intervalId = setInterval(function () {
 	        _this2.setState({
 	          now: new _moment2.default(),
