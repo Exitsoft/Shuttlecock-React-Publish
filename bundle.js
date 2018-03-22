@@ -98656,7 +98656,7 @@
 	        _react2.default.createElement(_Components.NoticeCard, { text: "\uC2DC\uAC04\uD45C\uAC00 2018\uB144\uB3C4 \uC2E0\uD559\uAE30\uB97C \uB9DE\uC774\uD558\uC5EC \uC0C8\uB86D\uAC8C \uBCC0\uACBD\uB418\uC5C8\uC2B5\uB2C8\uB2E4." }),
 	        _react2.default.createElement(
 	          "a",
-	          { href: "https://apply.likelion.org" },
+	          { href: "https://www.facebook.com/ericacounsel/" },
 	          _react2.default.createElement(_Components.Card, {
 	            style: {
 	              backgroundImage: "url(" + __webpack_require__(1426) + ")",
@@ -99607,7 +99607,7 @@
 /* 1426 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "/public/imgs/likelion.jpg";
+	module.exports = __webpack_require__.p + "/public/imgs/banner.jpg";
 
 /***/ }),
 /* 1427 */
