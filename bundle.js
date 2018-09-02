@@ -8882,7 +8882,7 @@
 /* 327 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 	
 	var _react = __webpack_require__(328);
 	
@@ -8940,7 +8940,7 @@
 	  _reactRedux.Provider,
 	  { store: store },
 	  _react2.default.createElement(_App2.default, null)
-	), document.getElementById('root'));
+	), document.getElementById("root"));
 
 /***/ }),
 /* 328 */
@@ -39901,7 +39901,7 @@
 	  _createClass(MainPage, [{
 	    key: "componentDidMount",
 	    value: function componentDidMount() {
-	      this.props.dispatch(TimeActionCreator.getTimetable("vacation"));
+	      this.props.dispatch(TimeActionCreator.getTimetable("semester"));
 	      this.props.dispatch(PedalroActionCreator.getPedalro());
 	    }
 	  }, {
@@ -98653,7 +98653,7 @@
 	      return _react2.default.createElement(
 	        "div",
 	        { className: "homeContent" },
-	        _react2.default.createElement(_Components.NoticeCard, { text: "\uC2DC\uAC04\uD45C\uAC00 2018\uB144\uB3C4 \uC5EC\uB984 \uACC4\uC808\uD559\uAE30\uC5D0 \uB530\uB77C\uC11C \uBCC0\uACBD\uB418\uC5C8\uC2B5\uB2C8\uB2E4." }),
+	        _react2.default.createElement(_Components.NoticeCard, { text: "\uC2DC\uAC04\uD45C\uAC00 2018\uB144\uB3C4 2\uD559\uAE30\uC5D0 \uB530\uB77C\uC11C \uBCC0\uACBD\uB418\uC5C8\uC2B5\uB2C8\uB2E4." }),
 	        _react2.default.createElement(
 	          "a",
 	          { href: "https://www.facebook.com/ericacounsel/" },
